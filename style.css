@@ -1,0 +1,101 @@
+/* Police */
+
+@font-face
+{
+    font-family: 'raleway-light';
+    src: url('Raleway-Light.ttf');
+    font-family: 'raleway-medium';
+    src: url('Raleway-Medium.ttf');
+}
+h1
+{
+
+}
+h2
+{
+
+
+}
+h3
+{
+
+}
+
+.tête
+{
+    
+
+
+}
+
+nav
+{ 
+  list-style-type:none;
+  display: flex;
+}
+nav a
+{
+
+
+}
+nav a:hover
+{
+    
+
+}
+
+strong
+{
+
+}
+
+#conteneur1
+{
+
+
+}
+
+.marseille
+{
+
+
+}
+
+#conteneur2
+{
+
+
+}
+
+.populaire
+{
+
+
+}
+
+#conteneur3
+{
+
+
+}
+
+.act
+{
+
+
+}
+
+#pied
+{
+
+
+}
+
+.propos
+{
+
+
+}
+
+
+
