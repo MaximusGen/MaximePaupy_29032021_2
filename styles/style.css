@@ -1,0 +1,118 @@
+/* Police */
+
+@font-face
+{
+    font-family: 'raleway-light';
+    src: url('polices/Raleway-Light.ttf');
+    font-family: 'raleway-medium';
+    src: url('polices/Raleway-Medium.ttf');
+}
+
+h1
+{
+  font-family: 'raleway-medium';
+  font-size: 15px;
+}
+h2
+{
+
+
+}
+h3
+{
+
+}
+
+/*En tête Reservia*/
+
+.header-content
+{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+}
+
+.logo-content
+{
+    background-color:lightslategray;
+    font-family: 'raleway-medium';
+}
+
+/*Navigation*/
+
+nav ul
+{ 
+  list-style-type:none;
+  display: flex;
+  justify-content: right;
+  background-color: grey;
+  font-family: 'raleway-medium';
+}
+nav li
+{
+  margin-right: 50px;
+}
+
+nav a
+{
+   text-decoration: none;
+
+}
+nav a:hover
+{
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+}
+
+/*Milieux du site*/
+
+#conteneur1
+{
+
+
+}
+
+.marseille
+{
+
+
+}
+
+#conteneur2
+{
+
+
+}
+
+.populaire
+{
+
+
+}
+
+#conteneur3
+{
+
+
+}
+
+.act
+{
+
+
+}
+/* Pied du site */
+#pied
+{
+
+
+}
+
+.propos
+{
+
+
+}
+
+
+
