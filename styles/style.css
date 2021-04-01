@@ -2,25 +2,22 @@
 
 @font-face
 {
-    font-family: 'raleway-light';
-    src: url('polices/Raleway-Light.ttf');
     font-family: 'raleway-medium';
     src: url('polices/Raleway-Medium.ttf');
+    font-family: 'raleway-variable';
+    src: url('polices/Raleway-VariableFont.ttf');
 }
 
-h1
+h1,nav li
 {
-  font-family: 'raleway-medium';
+  font-family: 'raleway-variable';
+  font-size: 20px;
+}
+h2,h3
+{
+  font-family: 'raleway-variable';
   font-size: 15px;
-}
-h2
-{
-
-
-}
-h3
-{
-
+  color: black;
 }
 
 /*En tête Reservia*/
@@ -28,14 +25,17 @@ h3
 .header-content
 {
     display: flex;
-    flex-direction:row;
-    flex-wrap: nowrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: flex-start;
 }
 
 .logo-content
 {
     background-color:lightslategray;
-    font-family: 'raleway-medium';
+    font-family: 'raleway-variable';
+    padding: 35px;
+
 }
 
 /*Navigation*/
@@ -46,7 +46,7 @@ nav ul
   display: flex;
   justify-content: right;
   background-color: grey;
-  font-family: 'raleway-medium';
+  padding-top: 35px;
 }
 nav li
 {
@@ -65,10 +65,17 @@ nav a:hover
 }
 
 /*Milieux du site*/
-
-#conteneur1
+.section-up
 {
+display: flex;
+flex-flow: row wrap;
+justify-content: space-between;
+background-color: red;
 
+}
+
+.container1
+{ 
 
 }
 
@@ -78,9 +85,8 @@ nav a:hover
 
 }
 
-#conteneur2
+.container2
 {
-
 
 }
 
@@ -90,8 +96,9 @@ nav a:hover
 
 }
 
-#conteneur3
+.conteneur3
 {
+  background-color: red;
 
 
 }
@@ -102,10 +109,13 @@ nav a:hover
 
 }
 /* Pied du site */
-#pied
+.pied
 {
-
-
+background-color:#f2f2f2c2;
+display: flex;
+flex-flow: row wrap;
+justify-content: space-around;
+font-family: 'raleway-variable';
 }
 
 .propos
