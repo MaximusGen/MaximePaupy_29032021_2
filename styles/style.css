@@ -111,7 +111,7 @@ background-color: red;
 /* Pied du site */
 .pied
 {
-background-color:#f2f2f2c2;
+background-color:#f2f2f2d0;
 display: flex;
 flex-flow: row wrap;
 justify-content: space-around;
