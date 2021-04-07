@@ -4,14 +4,15 @@
        <title>Réservia-réserver vos plus belle vacances</title>
        <meta charset="utf-8"/>
        <link href="styles/style.css" rel="stylesheet"/>
+       <script src="https://kit.fontawesome.com/79e3608237.js" crossorigin="anonymous"></script>
    </head>
 
    <body>
-
-       <header class="container header-content"> <!--L'en tête de Réservia-->
-
-         <div class="logo-content">  <!--La partie gauche de l'en-tête-->
-             <img src="logo/Reservia@3x.png"alt="logo reservia"/>
+              <!--Header Reservia-->
+       <header class="container header-content"> 
+             <!--Left part-->
+         <div class="logo-content">
+             <a href="index.html"><img src="logo/Reservia@3x.png"alt="logo reservia" class="logoreservia"/></a>
              <h1>Trouver votre hébergement pour des vacances de rêve</h1>
              <p>En plein centre ville ou en pleine nature</p>
              <div>
@@ -21,25 +22,26 @@
                
              </div>
          </div>
-
-         <nav> <!--le menu de navigation avec ancre Hebergement et Activités-->
+            <!--Navigation-Header-->
+         <nav> 
              <ul>
-               <li>Hébergement</li>
-               <li>Activités</li>
-               <li>S'inscrire</li>
+               <li><a href="#nav-hebe">Hébergement</a></li>
+               <li><a href="#nav-act">Activités</a></li>
+               <li class="inscript">S'inscrire</li>
              </ul>
          </nav>
         
        </header>
          
        <div class="section-up">
-       <section class="container1"> <!--Section Hébergements à Marseille-->
+         <!--Section Hébergements à Marseille-->
+       <section class="container1">
 
-          <h2>Hébergements à Marseille</h2>
+            <h2 id="nav-hebe">Hébergements à Marseille</h2>
       
             <article class="marseille">
 
-              <img/>
+              <img src="" alt="">
               <h3></h3>
               <p></p>
               <img/>
@@ -48,7 +50,7 @@
 
             <article class="marseille">
 
-              <img/>
+              <img src="" alt="">
               <h3></h3>
               <p></p>
               <img/>
@@ -57,7 +59,7 @@
 
             <article class="marseille">
 
-              <img/>
+              <img src="" alt="">
               <h3></h3>
               <p></p>
               <img/>
@@ -66,7 +68,7 @@
 
             <article class="marseille">
 
-              <img/>
+              <img src="" alt="">
               <h3></h3>
               <p></p>
               <img/>
@@ -75,7 +77,7 @@
 
             <article class="marseille">
 
-              <img/>
+              <img src="" alt="">
               <h3></h3>
               <p></p>
               <img/>
@@ -84,7 +86,7 @@
 
             <article class="marseille">
 
-              <img/>
+              <img src="" alt="">
               <h3></h3>
               <p></p>
               <img/>
@@ -93,7 +95,7 @@
            
              <article class="marseille">
 
-               <img/>
+              <img src="" alt="">
                <h3></h3>
                <p></p>
                <img/>
@@ -101,14 +103,15 @@
             </article>
 
        </section>
+             <!--Most popular-->
+       <section class="container2">
 
-       <section class="container2"> <!--Section les plus populaires-->
-
-        <h2>Les plus populaires</h2>
-
+            <div class="titlepopular">
+              <h2 id="nav-act">Les plus populaires</h2><i class="fas fa-chart-line"></i>
+            </div>
               <article class="popular">
 
-                <img/>
+                <img src="" alt="">
                 <h3></h3>
                 <p></p>
                 <img/>
@@ -117,7 +120,7 @@
         
               <article>
 
-                <img/>
+                <img src="" alt="">
                 <h3></h3>
                 <p></p>
                 <img/>
@@ -126,7 +129,7 @@
 
               <article class="popular">
 
-                <img/>
+                <img src="" alt="">
                 <h3></h3>
                 <p></p>
                 <img/>
@@ -135,81 +138,79 @@
             </div>
 
        </section>
-
-       <section class="conteneur3"> <!--Les Activités a faire à Marseille-->
+               <!--Marseille Activities-->
+       <section class="conteneur3">
             <h2>Activités à Marseille</h2>
-            <article class="act">
 
-               <img/>
-               <h3></h3>
+          <div class="activities">
+            
 
-            </article>
+            <article class="act-big">
 
-            <article class="act">
-
-              <img/>
-              <h3></h3>
-
-            </article>
-              
-            <article class="act">
-
-               <img/>
-               <h3></h3>
+              <img src="images/activities/vieuxport.jpg" alt="vieux port"/>
+              <h3 class="title-act">Vieux Port</h3>
 
             </article>
 
-            <article class="act">
+          <div class="actcol1">    
+            <article class="act-fort">
 
-              <img/>
-              <h3></h3>
-
-            </article>
-
-            <article class="act">
-
-              <img/>
-              <h3></h3>
+              <img src="images/activities/fortdepomegues.jpg" alt="">
+               <h3 class="title-act">Fort de Pomegues</h3>
 
             </article>
 
+            <article class="act-frioul">
 
-            <article class="act">
+              <img src="images/activities/Sans titre 4.jpg" alt="">
+              <h3 class="title-act">Îles du Frioul</h3>
 
-              <img/>
-              <h3></h3>
+            </article>
+          </div>
+            <article class="act-national">
+
+              <img src="images/activities/Sans titre 6.jpg" alt="">
+              <h3 class="title-act">Parc National des Calanques</h3>
 
             </article>
 
-            <article class="act">
 
-              <img/>
-              <h3></h3>
+            <article class="act-notredame">
+
+              <img src="images/activities/Sans titre 9.jpg" alt="">
+              <h3 class="title-act">Nôtre Dame de la Garde</h3>
 
             </article>
 
+            <article class="act-longchamp">
+
+              <img src="images/activities/Sans titre 8.jpg" alt="">
+              <h3 class="title-act">Parc Longchamp</h3>
+
+            </article>
+          </div>
        </section>
 
        <footer> <!--Bas de la page Réservia-->
           <div class="pied">
               
                <div class="about">
-                  <h2>A propos</h2>
-                  <p>Fonctionnement du site</p>
-                  <p>Conditions général de vente</p>
-                  <p>Données et confidentialité</p>
+                  <h2 class="title">A propos</h2>
+                  <p><a href="#" class="footernav">Fonctionnement du site</a></p>
+                  <p><a href="#" class="footernav">Conditions général de vente</a></p>
+                  <p><a href="#" class="footernav">Données et confidentialité</a></p>
                 </div>
                
-                   <div class="about">
-                     <h2>Nos hébergements</h2>
-                     <p>Charte qualité</p>
-                     <p>Soumettre vôtre hôtel</p>
-                   </div>
+                <div class="hebe">
+                  <h2 class="title"><a></a>Nos hébergements</h2>
+                  <p><a href="#" class="footernav">Charte qualité</a></p>
+                  <p><a href="#" class="footernav">Soumettre vôtre hôtel</a></p>
+                </div>
 
-                <div class="about">
-                  <h2>Assistance</h2>
-                  <p>Centre d'aide</p>
-                  <p>Nous contacter</p>
+                <div class="contact">
+                  <h2 class="title">Assistance</h2>
+                  <p><a href="#" class="footernav">Centre d'aide</a></p>
+                  <p><a href="#" class="footernav">Nous contacter</a></p>
                 </div>
 
             </div>
@@ -218,10 +219,5 @@
        </footer>
 
    </body>
-
-   </html>
-
-
-
 
 </html>

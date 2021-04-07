@@ -13,11 +13,20 @@ h1,nav li
   font-family: 'raleway-variable';
   font-size: 20px;
 }
-h2,h3
+h2
 {
   font-family: 'raleway-variable';
-  font-size: 15px;
+  font-size: 19px;
   color: black;
+  font-weight: bold;
+}
+h3
+{
+  font-family: 'raleway-variable';
+  font-size: 19px;
+  color: black;
+  font-weight: bold;
+  padding-left: 15px;
 }
 
 /*En tête Reservia*/
@@ -28,6 +37,11 @@ h2,h3
     flex-flow: row wrap;
     justify-content: space-between;
     align-content: flex-start;
+}
+.logoreservia
+{
+  width: 110px;
+  height: 50px;
 }
 
 .logo-content
@@ -52,19 +66,27 @@ nav li
 {
   margin-right: 50px;
 }
+.inscript
+{
+  color: #0065FC;
+  font-weight: bold;
+}
 
 nav a
 {
    text-decoration: none;
+   color: black;
 
 }
 nav a:hover
 {
     color: #0065FC;
-    border-top: 3px solid #0065FC;
+    border-top: 2px solid #0065FC;
+    padding-top: 40px;
 }
 
 /*Milieux du site*/
+
 .section-up
 {
 display: flex;
@@ -73,7 +95,10 @@ justify-content: space-between;
 background-color: red;
 
 }
-
+.titlepopular
+{
+  display:flex;
+}
 .container1
 { 
 
@@ -87,7 +112,15 @@ background-color: red;
 
 .container2
 {
-
+display: flex;
+flex-direction: column;
+width: 420px;
+height: 620px;
+background-color: #f2f2f2;
+}
+.titlepopular
+{
+  display:flex;
 }
 
 .populaire
@@ -98,31 +131,103 @@ background-color: red;
 
 .conteneur3
 {
-  background-color: red;
 
-
+  width: 1800px;
+  height: 600px;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 50px;
 }
-
-.act
+.activities
 {
-
-
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  margin-top: 60px;
+  margin-left: -190px;
 }
+
+.act-big
+{
+  width: 297px;
+  height: 450px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px 3px #d8d7d7;
+}
+
+.act-fort
+{
+ width: 356px;
+ height: 212px;
+ border-radius: 8px;
+ box-shadow: 0 0 6px 3px #d8d7d7;
+ margin-left: 45px; 
+}
+.act-frioul
+{
+width: 356px;
+height: 164px;
+border-radius: 8px;
+box-shadow: 0 0 6px 3px #d8d7d7;
+margin-left: 45px;
+margin-top: 75px;
+}
+.act-national
+{
+  width: 310px;
+  height: 450px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px 3px #d8d7d7;
+  margin-left: 45px;
+}
+.act-notredame
+{
+width: 356px;
+height: 212px;
+border-radius: 8px;
+box-shadow: 0 0 6px 3px #d8d7d7;
+margin-left: 45px;
+}
+
+.act-longchamp
+{
+  width: 356px;
+  height: 212px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px 3px #d8d7d7;
+  margin-left: 45px;
+  margin-bottom: 85px;
+}
+
 /* Pied du site */
+
+footer a
+{
+  color: black;
+  text-decoration: none;
+}
+footer a:hover
+{
+  color: #0065FC;
+}
 .pied
 {
-background-color:#f2f2f2d0;
-display: flex;
-flex-flow: row wrap;
-justify-content: space-around;
-font-family: 'raleway-variable';
+  background-color:#f2f2f2;
+  display: flex;
+  justify-content:flex-start;
+  font-family: 'raleway-variable';
+  padding-top: 30px;
+  height: 215px;
 }
-
-.propos
+.about
 {
-
-
+  padding-left: 50px;
 }
-
-
-
+.hebe
+{
+  padding-left: 300px;
+}
+.contact
+{
+  padding-left: 400px;
+}
