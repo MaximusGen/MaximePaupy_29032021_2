@@ -2,10 +2,10 @@
 
 @font-face
 {
-    font-family: 'raleway-medium';
-    src: url('polices/Raleway-Medium.ttf');
-    font-family: 'raleway-variable';
-    src: url('polices/Raleway-VariableFont.ttf');
+  font-family: 'raleway-medium';
+  src: url('polices/Raleway-Medium.ttf');
+  font-family: 'raleway-variable';
+  src: url('polices/Raleway-VariableFont.ttf');
 }
 
 h1,nav li
@@ -13,11 +13,31 @@ h1,nav li
   font-family: 'raleway-variable';
   font-size: 20px;
 }
-h2,h3
+h2
 {
   font-family: 'raleway-variable';
   font-size: 19px;
   color: black;
+  font-weight: bold;
+}
+
+h3
+{
+  font-family: 'raleway-variable';
+  font-size: 19px;
+  color: black;
+  font-weight: bold;
+  padding-left: 15px;
+}
+h5
+{
+  font-family: 'raleway-variable';
+  font-size: 19px;
+  color: black;
+  font-weight: bold;
+  padding-left: 140px;
+  margin-top: -130px;
+  position: absolute;   
 }
 
 /*header*/
@@ -27,9 +47,9 @@ h2,h3
 
 header
 {
-    display: grid;
-    grid-template-columns:repeat (12, 1fr);
-    grid-gap: 20px;
+  display: grid;
+  grid-template-columns:repeat (12, 1fr);
+  grid-gap: 20px;
 }
 .logoreservia
 {
@@ -38,16 +58,64 @@ header
 }
 .col6
 {
-    background-color:lightslategray;
-    font-family: 'raleway-variable';
-    grid-column-end: span 5; 
-   
+  background-color:lightslategray;
+  font-family: 'raleway-variable';
+  grid-column-end: span 7;
+  margin-left: 50px;   
+}
+.search-localisation 
+{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: stretch; 
 }
 
+.gps
+{
+  width: 50px;
+  height: 50px;
+  margin-left: 1px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: #f2f2f2
+}
+.icone
+{
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 15px;
+
+}
+.input
+{
+  border-color: #f2f2f2;
+  width: 250px;
+  font-family: 'raleway-variable';
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+}
+button
+{
+  margin-left: -1px;
+  width: 130px;
+  height: 50px;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 50px;
+  background-color: #0065FC;
+  color: #fff;
+  border: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  cursor: pointer; 
+}
 /*Navigation*/
 
 nav{
-    grid-column: 6/ 12
+  grid-column: 11/ 12
 }
 nav ul
 { 
@@ -78,60 +146,286 @@ nav ul
 }
 nav a
 {
-   text-decoration: none;
-   color:black;
+  text-decoration: none;
+  color:black;
 }
 nav a:hover
 {
-    color: #0065FC;
-    border-top: 2px solid #0065FC;
-    padding-top: 40px;
+  color: #0065FC;
+  border-top: 2px solid #0065FC;
+  padding-top: 40px;
 }
-
-/*Sections*/
+/*SECTIONS MIDDLE RESERVIA*/
 
 .section-up
 {
-display: grid;
-grid-template-columns: repeat(12,1fr);
-grid-gap: 10px;
-
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-gap: 10px;
+}
+.simple
+{
+  color: #0065FC; 
+}
+.white
+{
+  color: #f2f2f2  
 }
 
+/*ACCOMODATION*/
 .container1
-{ 
-    grid-column: 1/8;
-    background-color: red;
+{
+  width: 1081px;
+  height: 707px;
+  display: grid;
+  grid-column: 1/8;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  margin-left: 50px;
 }
-
+#nav-hebe
+{
+  margin-left: 60px;
+  margin-top: 30px;
+} 
 .marseille
 {
-
-
+  width: 246px;
+  height: 204px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px 3px #d8d7d7;
+  background-color: white;
+  margin-bottom: 30px;
+}
+.mars
+{
+  grid-column: 1/2;
+  margin-top: -80px;
+  margin-left: 80px;
+}
+.mars-1
+{
+  grid-column: 3/4;
+  margin-top: -80px;
+  margin-left: -270px;
+}
+.mars-2
+{
+  grid-column: 5/6;
+  margin-top: -80px;
+  margin-left: -300px;
+}
+.marseille-1
+{
+  width: 246px;
+  height: 204px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px 3px #d8d7d7;
+  background-color: white;
+}
+.marseille-2
+{
+  width: 246px;
+  height: 204px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px 3px #d8d7d7;
+  background-color: white;
+  grid-column: 5/6;
 }
 
+.image-mars
+{
+  width: 246px;
+  height: 120px;
+  object-fit:cover
+}
+.p-hebe
+{
+  font-family: 'raleway-variable';
+  color: black;
+  margin-top: -20px;
+  margin-left: 15px;   
+}
+.star
+{ 
+  margin-top: -16px;
+  padding-left: 15px;
+}
+
+.affich
+{
+  text-decoration: none;
+  font-family: 'raleway-variable';
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  position: absolute;
+  margin-top: 32%;
+  margin-left: 70px;
+}
+           /*MOST POPULAR*/
 .container2
 {
-    grid-column: 10/12;
-    background-color: rgb(236, 65, 65);
+  width: 420px;
+  height: 610px;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+  margin-right: 300px;
+  grid-column: 9/12;
+}
+.title-popular1
+{
+  margin-left: 40px ;
+}
+.logo-popular
+{
+  font-size: 25px;
+  position: absolute;
+  margin-left: 370px;
+  margin-top: -45px;
 }
 
-.populaire
+.popular
 {
-
-
+  width: 345px;
+  height: 145px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px 3px #d8d7d7;
+  background-color: white;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  margin-top: 30px;
 }
 
-.conteneur3
+.imagepopular
 {
-  background-color: rgb(182, 12, 12);
+  width: 120px;
+  height: 135px;
+  border-radius: 8px 0 0 8px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.nuitpopular
+{
+  font-family: 'raleway-variable';
+  color: black;
+  margin-top: -80px;
+  margin-left: 140px;    
+}
+.star-popular
+{
+  color:#0065FC;
+  margin-left: 140px;
+}
+/*ACTIVITIES*/
+
+.container3
+{
+  width: 1800px;
+  height: 600px;
+  display: grid;
   grid-column: 1/13;
 }
-
-.act
+.title-container3
 {
+  margin-left: 50px;
+}
+.act-big
+{
+  width: 297px;
+  height: 450px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px 3px #d8d7d7;
+  grid-column: 1/2;
+  margin-left: 50px;
 
+}
+.image-big
+{
+  width: 297px;
+  height:390px ;
+  object-fit: cover;
+}
+.actcol1
+{
+  grid-column: 2/3;
+  margin-left: -150px;
+}
+.act-fort
+{
+  width: 356px;
+  height: 212px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px 3px #d8d7d7; 
+}
+.image-fort
+{
+  width: 356px;
+  height: 150px;
+  object-fit: cover;
+}
+.act-frioul
+{
+  width: 356px;
+  height: 164px;
+  border-radius: 10px;
+  box-shadow: 0 0 6px 3px #d8d7d7;
+  margin-top: 60px;
+}
+.image-frioul
+{
+  width: 356px;
+  height: 110px;
+  object-fit: cover;
+}
+.act-national
+{
+  width: 310px;
+  height: 450px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px 3px #d8d7d7;
+  grid-column: 3/4;
+  margin-left: -150px;
+}
+.actcol2
+{
+  grid-column: 4/5;
+  margin-left:-150px; 
+}
+.image-national
+{
+  width: 310px;
+  height: 390px;
+  object-fit: cover;
+}
+.act-notredame
+{
+  width: 356px;
+  height: 212px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px 3px #d8d7d7;
+}
+.image-notredame
+{
+  width: 356px;
+  height: 150px;
+  object-fit: cover;
+}
 
+.act-longchamp
+{
+  width: 356px;
+  height: 212px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px 3px #d8d7d7;
+  margin-top: 30px;
+}
+.image-longchamp
+{
+  width: 356px;
+  height: 150px;
+  object-fit: cover;
 }
 /* Footer */
 
@@ -146,26 +440,27 @@ footer a:hover
 }
 .pied
 {
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-column: 1/12;
-    align-items: center;
-    background-color:#f2f2f2c2;
-    font-family: 'raleway-variable';
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-column: 1/12;
+  align-items: center;
+  background-color:#f2f2f2c2;
+  font-family: 'raleway-variable';
 }
-
 .about
 {
-grid-column: 2/2;
-padding-top: 30px;
+  grid-column: 2/2;
+  padding-top: 30px;
 }
 .house
 {
-grid-column: 5/7;
+  grid-column: 5/7;
+  margin-top: -50px;
 }
 .assistance
 {
-grid-column: 8/8;
+  grid-column: 8/8;
+  margin-top: -50px;
 }
 
 
