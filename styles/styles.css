@@ -53,6 +53,7 @@ h5
     flex-flow: row wrap;
     justify-content: space-between;
     align-content: flex-start;
+    margin-left: 50px;
 }
 .logoreservia
 {
@@ -98,6 +99,8 @@ background-color: #f2f2f2
   width: 250px;
   font-family: 'raleway-variable';
   color: black;
+  font-size: 20px;
+  font-weight: bold;
 }
 button
 {
@@ -227,7 +230,7 @@ nav a:hover
     margin-top: 32%;
     margin-left: 70px;
 }
-    /*----- MOST POPULAR-----*/
+                    /*----- MOST POPULAR-----*/
 .container2
 {
     width: 420px;
@@ -300,7 +303,7 @@ nav a:hover
 .conteneur3
 {
     overflow: auto;
-    width: 1800px;
+    width: 1900px;
     height: 600px;
     display: flex;
     justify-content: left;
