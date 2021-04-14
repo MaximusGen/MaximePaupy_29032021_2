@@ -3,21 +3,21 @@
 
 <head>
     <meta charset="utf-8"/>
-    <title>Test</title>
+    <title>Réservia, réserver vos plus belles vacances</title>
     <link rel="stylesheet" href="styles/styles.css">
     <script src="https://kit.fontawesome.com/79e3608237.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-                                            <!----------Header Reservia--------------->
+                                            <!----------HEADER RESERVIA--------------->
                                             
   <header class="container header-content"> 
-                                            <!-------------Left part----------------->
+                                            <!-------------LEFT PART----------------->
 
     <div class="logo-content">
           <a href="index.html"><img src="logo/Reservia@3x.png" alt="logo reservia" class="logoreservia"/></a>
           <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-          <p>En plein centre ville ou en pleine nature</p>
+          <p class="sous-title">En plein centre ville ou en pleine nature</p>
       <div class="search-localisation">
           <div class="gps">
             <i class="fas fa-map-marker-alt icone"></i>
@@ -25,11 +25,28 @@
             <input type="text" placeholder="Marseille, France" class="input"/>
             <button>Recherche</button>
       </div>
-    <div>
-                    
-    </div>
-    </div>
-                                             <!--------------Navigation-Header------------------>
+      <div class="filter">
+        <h6>Filtres</h6>
+        <div class="catégories eco">
+          <i class="fas fa-money-bill-wave icons"></i>
+          <a href="#" class="a-filter">Économique</a> 
+        </div>
+        <div class="catégories fami">
+          <i class="fas fa-child icons"></i>
+          <a href="#" class="a-filter">Familial</a>
+        </div>
+        <div class="catégories roman">
+          <i class="fas fa-heart icons"></i>
+          <a href="#" class="a-filter">Romantique</a>
+        </div>
+        <div class="catégories animal">
+          <i class="fas fa-dog icons"></i>
+          <a href="#" class="a-filter">Animaux autorisés</a>
+        </div>
+  </div>
+  <i class="fas fa-info info"></i>
+  <p class="info-text">Plus de 500 logements dont disponible dans cette ville</p>  
+                                             <!--------------NAVIGATION HEADER------------------>
 
     <nav> 
           <ul>
@@ -40,17 +57,17 @@
     </nav>
              
 </header>
-                                            <!----------------Section Menu------------------------>
+                                            <!----------------MIDDLE RESERVIA------------------------>
 
 <div class="section-up">
    <section class="container1">
-                                            <!----------------Accommodation----------------------->
+                                            <!----------------ACCOMODATION----------------------->
 
           <h2 id="nav-hebe">Hébergements à Marseille</h2>
 
     <div class="container1-1">
         <article class="marseille">  
-             <img src="images/hebergement/aubergelacannebiere.jpg" alt="" class="image-marseille">
+             <img src="images/hebergement/aubergelacannebiere.jpg" alt="Auberge la Cannebière" class="image-marseille"/>
              <h3>Auberge la Cannebière</h3>
              <p class="p-hebe">Nuit à partir de <strong>25€</strong></p>
                 <div class="star">
@@ -65,7 +82,7 @@
 
         <article class="marseille">
 
-              <img src="images/hebergement/hoteldelamer.jpg" alt="" class="image-marseille">
+              <img src="images/hebergement/hoteldelamer.jpg" alt="Hôtel de la mer" class="image-marseille"/>
               <h3>Hôtel de la mer</h3>
                 <div class="p-star">
                   <p class="p-hebe">Nuit à partir de 46<strong>€</strong></p>
@@ -81,7 +98,7 @@
 
         <article class="marseille">
 
-              <img src="images/hebergement/hotelduport.jpg" alt="" class="image-marseille">
+              <img src="images/hebergement/hotelduport.jpg" alt="Hôtel du port" class="image-marseille"/>
               <h3>Hôtel du port</h3>
                     <div class="p-star">
                       <p class="p-hebe">Nuit à partir de 52<strong>€</strong></p>
@@ -97,7 +114,7 @@
 
         <article class="marseille">
 
-               <img src="images/hebergement/aubergelepanier.jpg" alt="" class="image-marseille">
+               <img src="images/hebergement/aubergelepanier.jpg" alt="Auberge le Panier" class="image-marseille"/>
                <h3>Auberge Le Panier</h3>
                     <div id="p-star">
                       <p class="p-hebe">Nuit à partir de <strong>25€</strong></p>
@@ -113,7 +130,7 @@
 
         <article class="marseille">
 
-                 <img src="images/hebergement/hotellesmouettes.jpg" alt="" class="image-marseille">
+                 <img src="images/hebergement/hotellesmouettes.jpg" alt="Hôtel les mouettes" class="image-marseille"/>
                  <h3>Hôtel Les mouettes</h3>
                     <p class="p-hebe">Nuit à partir de 76<strong>€</strong></p>
                       <div class="star">
@@ -128,7 +145,7 @@
 
         <article class="marseille">
 
-                  <img src="images/hebergement/hotelchezamina.jpg" alt="" class="image-marseille">
+                  <img src="images/hebergement/hotelchezamina.jpg" alt="Hôtel chez Amina" class="image-marseille"/>
                   <h3>Hôtel Chez Amina</h3>
                      <p class="p-hebe">Nuit à partir de 96<strong>€</strong></p>
                         <div class="star">
@@ -142,7 +159,7 @@
       </div>
             <a class="affich" href="#">Afficher plus</a>
    </section>
-                                                 <!----------------Most popular--------------------->
+                                                 <!----------------MOST POPULAR--------------------->
 
    <section class="container2">
       <div id="title-popular">
@@ -153,7 +170,7 @@
 
         <article class="popular">
     
-            <img src="images/popular/hotelsoleil.jpg" alt="" class="imagepopular"/>
+            <img src="images/popular/hotelsoleil.jpg" alt="Hôtel soleil" class="imagepopular"/>
             <h5>Hôtel Le soleil du<br/> matin</h5>
             <p class="nuitpopular">Nuit à partir de 128<strong>€</strong></p>
                    <div class="star-popular">
@@ -168,7 +185,7 @@
             
         <article class="popular">
     
-            <img src="images/popular/chambredhote.jpg" alt="" class="imagepopular"/>
+            <img src="images/popular/chambredhote.jpg" alt="Chambre d'hôtes" class="imagepopular"/>
             <h5>Au coeur de l'eau<br/>Chambres d'hôtes</h5>
             <p class="nuitpopular">Nuit à partir de 71<strong>€</strong></p>
                    <div class="star-popular">
@@ -183,7 +200,7 @@
     
           <article class="popular">
     
-              <img src="images/popular/hoteltoutbleu.jpg" alt="" class="imagepopular"/>
+              <img src="images/popular/hoteltoutbleu.jpg" alt="Hôtel tout bleu" class="imagepopular"/>
               <h5>Hôtel Tout bleu et<br/> Blanc</h5>
               <p class="nuitpopular">Nuit à partir de 68<strong>€</strong></p>
                    <div class="star-popular">
@@ -199,7 +216,7 @@
     </div>
 
   <section class="conteneur3">
-                                                <!------------------Activities---------------------->
+                                                <!------------------ACTIVITIES---------------------->
 
             <h2><a id="nav-act">Activités à Marseille</a></h2>
      <div class="activities">
@@ -207,7 +224,7 @@
 
             <article class="act-big">
 
-                <img src="images/activities/vieuxport.jpg" alt="vieux port"/>
+                <img src="images/activities/vieuxport.jpg" alt="vieux port" class="image-port"/>
                 <h3 class="title-act">Vieux Port</h3>
 
             </article>
@@ -215,14 +232,14 @@
          <div class="actcol1">    
             <article class="act-fort">
 
-                <img src="images/activities/fortdepomegues.jpg" alt="">
+                <img src="images/activities/fortdepomegues.jpg" alt="Fort de pomegues" class="image-fort"/>
                 <h3 class="title-act">Fort de Pomegues</h3>
 
             </article>
 
             <article class="act-frioul">
 
-                <img src="images/activities/Sans-titre-4.jpg" alt="">
+                <img src="images/activities/ilefrioul.jpg" alt="Îles du Frioul" class="image-frioul"/>
                 <h3 class="title-act">Îles du Frioul</h3>
 
             </article>
@@ -230,7 +247,7 @@
 
             <article class="act-national">
 
-                <img src="images/activities/Sans-titre-6.jpg" alt="">
+                <img src="images/activities/parcnational.jpg" alt="Parc national des Calanques" class="image-national"/>
                 <h3 class="title-act">Parc National des Calanques</h3>
 
             </article>
@@ -238,20 +255,20 @@
 
             <article class="act-notredame">
 
-                <img src="images/activities/Sans-titre-9.jpg" alt="">
+                <img src="images/activities/notredame.jpg" alt="Nôtre dame de la Garde" class="image-notredame"/>
                 <h3 class="title-act">Nôtre Dame de la Garde</h3>
 
             </article>
 
             <article class="act-longchamp">
 
-                <img src="images/activities/Sans-titre-8.jpg" alt="">
+                <img src="images/activities/parclongchamp.jpg" alt="Parc Longchamp" class="image-longchamp"/>
                 <h3 class="title-act">Parc Longchamp</h3>
 
             </article>
      </div>
   </section>
-                                            <!------------------Footer------------------------> 
+                                            <!------------------FOOTER------------------------> 
   <footer>                                  
      <div class="pied">
       
