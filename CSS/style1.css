@@ -7,15 +7,16 @@
   font-family: 'raleway-variable';
   src: url('polices/Raleway-VariableFont.ttf');
 }
-
-h1,nav li
+body
 {
   font-family: 'raleway-variable';
+}
+h1,nav li
+{
   font-size: 20px;
 }
 h2
 {
-  font-family: 'raleway-variable';
   font-size: 19px;
   color: black;
   font-weight: bold;
@@ -23,21 +24,24 @@ h2
 
 h3
 {
-  font-family: 'raleway-variable';
   font-size: 19px;
   color: black;
   font-weight: bold;
+  margin: 4px;
   padding-left: 15px;
 }
 h5
 {
-  font-family: 'raleway-variable';
   font-size: 19px;
   color: black;
   font-weight: bold;
   padding-left: 140px;
   margin-top: -130px;
   position: absolute;   
+}
+h6
+{
+  font-size: 20px;
 }
 
 /*header*/
@@ -58,8 +62,6 @@ header
 }
 .col6
 {
-  background-color:lightslategray;
-  font-family: 'raleway-variable';
   grid-column-end: span 7;
   margin-left: 50px;   
 }
@@ -88,13 +90,16 @@ header
   margin-top: 15px;
 
 }
+input::placeholder
+{
+  color: black;
+}
 .input
 {
   border-color: #f2f2f2;
   width: 250px;
-  font-family: 'raleway-variable';
   color: black;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
 }
 button
@@ -112,6 +117,90 @@ button
   border-bottom-right-radius: 15px;
   cursor: pointer; 
 }
+/*FILTER HEADER*/
+.filter
+{
+    display: flex;
+    flex-flow: row wrap;
+    grid-column: 1/span 7;
+}
+.catégories
+{
+    border: 2px solid #d9d9d9;
+    border-radius: 30px;
+    height: 54px;
+    border-left: none; 
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.icons
+{
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    padding-left: 15px;
+    padding-top:15px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+}
+.a-filter
+{
+    text-decoration: none;
+    color: #000;
+    padding-left: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.eco
+  {
+    width: 185px;
+  }
+.fami
+  {
+    width: 150px;
+  }
+.roman
+  {
+    width: 175px;
+  }
+.animal
+  {
+    width: 225px;
+  }
+.catégories:hover
+  {
+    border: 2px solid black;
+  }
+.icons:hover
+  {
+    background-color: black;
+  }
+  /*INFO HEADER*/
+.infoss
+  {
+    display: flex;
+    flex-flow: row wrap;
+  }
+.info
+  {   
+    width: 20px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom:5px;
+    color:#0065FC;
+    font-size: 20px;
+    border: 2px solid #d9d9d9;
+    border-radius: 30px;
+    line-height: 20px;
+    margin-top: -5px;
+  }
+.info-text
+  {
+    font-size: 18px;  
+    margin-left: 50px;
+    margin-top: -25px;
+  }
 /*Navigation*/
 
 nav{
@@ -120,8 +209,7 @@ nav{
 nav ul
 { 
   padding-top: 20px;
-  list-style-type:none;
-  background-color: grey;  
+  list-style-type:none; 
   display: flex;
   justify-content: flex-end; 
 }
@@ -162,6 +250,7 @@ nav a:hover
   display: grid;
   grid-template-columns: repeat(12,1fr);
   grid-gap: 10px;
+  margin-top: 40px;
 }
 .simple
 {
@@ -237,25 +326,25 @@ nav a:hover
 {
   width: 246px;
   height: 120px;
-  object-fit:cover
+  object-fit:cover;
+  border-radius: 8px 8px 0 0;
 }
 .p-hebe
 {
-  font-family: 'raleway-variable';
-  color: black;
-  margin-top: -20px;
-  margin-left: 15px;   
+    color: black;
+    margin-bottom: 25px;
+    margin-left: 18px;
+    margin-top: -0px; 
 }
 .star
 { 
-  margin-top: -16px;
-  padding-left: 15px;
+    margin-top: -16px;
+    margin-left: 18px;
 }
 
 .affich
 {
   text-decoration: none;
-  font-family: 'raleway-variable';
   font-weight: bold;
   font-size: 20px;
   color: black;
@@ -267,7 +356,7 @@ nav a:hover
 .container2
 {
   width: 420px;
-  height: 610px;
+  height: 707px;
   border-radius: 8px;
   background-color: #f2f2f2;
   margin-right: 300px;
@@ -276,6 +365,7 @@ nav a:hover
 .title-popular1
 {
   margin-left: 40px ;
+  margin-top: 30px;
 }
 .logo-popular
 {
@@ -283,6 +373,12 @@ nav a:hover
   position: absolute;
   margin-left: 370px;
   margin-top: -45px;
+}
+.popularcontent
+{
+  display: flex;
+  flex-flow: column wrap;
+  margin-top:70px;
 }
 
 .popular
@@ -293,7 +389,6 @@ nav a:hover
   box-shadow: 0 0 8px 3px #d8d7d7;
   background-color: white;
   margin-left: 40px;
-  margin-bottom: 20px;
   margin-top: 30px;
 }
 
@@ -308,7 +403,6 @@ nav a:hover
 
 .nuitpopular
 {
-  font-family: 'raleway-variable';
   color: black;
   margin-top: -80px;
   margin-left: 140px;    
@@ -326,10 +420,20 @@ nav a:hover
   height: 600px;
   display: grid;
   grid-column: 1/13;
+  margin-top: 50px;
 }
 .title-container3
 {
   margin-left: 50px;
+  margin-top: 50px;
+}
+#nav-act
+{
+  margin-top: 50px;
+}
+.title-act
+{
+  margin-top: 15px;
 }
 .act-big
 {
@@ -346,6 +450,7 @@ nav a:hover
   width: 297px;
   height:390px ;
   object-fit: cover;
+  border-radius: 8px 8px 0 0;
 }
 .actcol1
 {
@@ -364,6 +469,7 @@ nav a:hover
   width: 356px;
   height: 150px;
   object-fit: cover;
+  border-radius: 8px 8px 0 0;
 }
 .act-frioul
 {
@@ -378,6 +484,7 @@ nav a:hover
   width: 356px;
   height: 110px;
   object-fit: cover;
+  border-radius: 8px 8px 0 0;
 }
 .act-national
 {
@@ -398,6 +505,7 @@ nav a:hover
   width: 310px;
   height: 390px;
   object-fit: cover;
+  border-radius: 8px 8px 0 0;
 }
 .act-notredame
 {
@@ -411,6 +519,7 @@ nav a:hover
   width: 356px;
   height: 150px;
   object-fit: cover;
+  border-radius: 8px 8px 0 0;
 }
 
 .act-longchamp
@@ -426,6 +535,7 @@ nav a:hover
   width: 356px;
   height: 150px;
   object-fit: cover;
+  border-radius: 8px 8px 0 0;
 }
 /* Footer */
 
@@ -445,7 +555,7 @@ footer a:hover
   grid-column: 1/12;
   align-items: center;
   background-color:#f2f2f2c2;
-  font-family: 'raleway-variable';
+  margin-top: 50px;
 }
 .about
 {
