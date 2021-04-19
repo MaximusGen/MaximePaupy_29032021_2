@@ -119,6 +119,14 @@ button
     border-bottom-right-radius: 15px;
     cursor: pointer; 
 }
+em
+{
+    font-style: none;
+}
+.searchicon
+{
+  color:#0065FC;
+}
 .filter
 {
     display: flex;
@@ -538,3 +546,4 @@ footer a:hover
 {
     padding-left: 400px;
 }
+
