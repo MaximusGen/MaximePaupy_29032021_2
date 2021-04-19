@@ -47,7 +47,7 @@ h6
 }
                   /*..........HEADER RESERVIA..........*/
 
-header-content
+.header-content
 {
     display: flex;
     flex-flow: row wrap;
@@ -119,10 +119,7 @@ button
     border-bottom-right-radius: 15px;
     cursor: pointer; 
 }
-em
-{
-    font-style: none;
-}
+
 .searchicon
 {
   color:#0065FC;
@@ -216,9 +213,9 @@ nav ul
 { 
     list-style-type:none;
     display: flex;
-    justify-content: right;
     margin-top: -340px;
     padding-top: 35px;
+    margin-left: 1400px;
 }
 nav li
 {
@@ -335,15 +332,17 @@ nav a:hover
     width: 420px;
     height: 707px;
     display: flex;
+    flex-flow: column wrap;
     border-radius: 8px;
     background-color: #f2f2f2;
-    justify-content: center;
+    justify-content:space-around;
     margin-right: 250px;
 }
 .title-popular1
 {
     text-align: left;
-    margin-top: 30px;
+    margin-top: -10px;
+    margin-left: 20px;
 }
 .logo-popular
 {
@@ -353,18 +352,6 @@ nav a:hover
     margin-top: -45px;
 }
 
-.popularcontent
-{
-    width: 364px;
-    height: 512px;
-    background-color: #f2f2f2;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
-    align-self:center;
-    margin-left: -200px;
-    margin-top: 70px;
-}
 .popular
 {
     width: 345px;
@@ -372,7 +359,8 @@ nav a:hover
     border-radius: 8px;
     box-shadow: 0 0 8px 3px #d8d7d7;
     background-color: white;
-    margin-left: 20px;
+    margin-left: 40px;
+    margin-bottom: 20px;
 }
 
 .imagepopular
@@ -384,17 +372,11 @@ nav a:hover
     margin-left: 5px;
 }
 
-.nuitpopular
+.text-popular
 {
-    color: black;
-    margin-top: -80px;
-    margin-left: 140px;    
-}
-.star-popular
-{
-    color:#0065FC;
-    margin-top: 30px; 
-    margin-left: 140px;  
+  font-size: 17px;
+  margin-left: 140px;
+  margin-top: -90px;
 }
                   /*..........ACTIVITIES..........*/
 
@@ -423,6 +405,7 @@ nav a:hover
 }
 .act-big
 {
+
     width: 297px;
     height: 450px;
     border-radius: 8px;
@@ -547,3 +530,181 @@ footer a:hover
     padding-left: 400px;
 }
 
+@media screen and (min-width: 400px) and (max-width: 1028px)
+{
+    body
+    {
+        width: 1228px;
+    }
+    h1
+    {
+      margin-top: 50px;
+    }
+    #nav-hebe
+    {
+        margin-left: 20px;
+    }
+
+    /*HEADER*/
+    .header-content
+    {
+      margin-left: -5px;
+    }
+    .filter
+    {
+        display: block;
+        justify-content: space-around;
+    }
+    .filter-media
+    {
+      display: flex;
+      flex-flow: column wrap;
+      margin-top: -30px;
+      margin-bottom: 30px;
+    }
+    .catégories
+    {
+        margin-top: 10px;
+    }
+    .info
+    {
+     margin-top: 30px;
+    }
+    .info-text
+      {
+        font-size: 16px;  
+        margin-top: -30px;
+      }
+     /*NAVIGATION*/
+    
+     nav ul
+    { 
+        margin-top: -670px;
+        margin-left: 300px;
+    }
+    
+    /*MIDDLE SECTION*/
+    .section-up
+    {
+      width: 800px;
+      flex-flow: row wrap;
+    }
+     /*ACCOMODATION*/
+     .container1
+     {
+         width: 375px;
+         height: 1500px;
+         margin-left: -10px;
+         background-color: white;
+     }
+     .container1-1
+     {
+         width: 375px;
+         height: 1350px;
+     }
+     .marseille
+     {    
+         width: 340px;
+         height: 200px;
+         margin-right: 15px;
+     }
+     .image-marseille
+     {
+         width: 340px;
+         height: 115px;
+     }
+    /*----- MOST POPULAR-----*/
+    .container2
+    {
+        width: 375px;
+        height: 580px;
+        margin-right: 40px;
+        background-color: white;
+        margin-top: 30px;
+    }
+    .title-popular1
+    {
+        margin-left: 15px;
+    }
+    .popular
+    {
+        margin-left: 15px
+    }
+    .affich
+    {
+       margin-top: 1500px;
+       margin-left: 20px;
+    }
+
+    /*ACTIVITIES*/
+    
+    .conteneur3
+    {
+        width: 800px;
+        height: 900px;
+        display: flex;
+        justify-content: left;
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+    .activities
+    {
+      display: flex;
+      flex-flow: row wrap;
+      margin-top: 70px;
+      justify-content: space-around;
+      width: 800px;
+      margin-left: -230px;
+    }
+    .mobile-act
+    {
+      width: 340px;
+      height: 200px;
+      border-radius: 15px;
+      box-shadow: 0 0 8px 3px #d8d7d7;
+      margin-bottom: 30px;
+    }
+    .act-big
+    {
+        margin-right: -80px;
+    }
+    .act-national
+    {
+      margin-top: -258px;
+      margin-left: -0px;
+      margin-right: -80px;
+    }
+    .act-longchamp
+    {
+      margin-right: 430px;
+      margin-top: -258px;
+    }
+    .mobile-imgact
+    {
+      width: 340px;
+      height: 135px;
+      border-radius: 15px 15px 0 0;
+    }
+    /*FOOTER*/
+    .pied
+    {
+        flex-flow: row wrap;
+        width: 1028px;
+        height: 250px;
+        margin-top: 100px;
+        padding-top: 55px;
+    }
+    .about
+    {
+        padding-left: 10px;
+    }
+     .hebe
+    {
+        padding-left: 50px;
+    }
+    .contact
+    {
+        padding-left: 70px;
+    }
+
+}
