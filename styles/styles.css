@@ -19,7 +19,7 @@ h1,nav li
 }
 h2
 {
-    font-size: 21px;
+    font-size: 22px;
     color: black;
     font-weight: bold;
 }
@@ -55,7 +55,7 @@ h6
     align-content: flex-start;
     margin-left: 50px;
 }
-.logoreservia
+.logo-reservia
 {
     width: 110px;
     height: 50px;
@@ -66,11 +66,12 @@ h6
     display: flex;
     flex-flow: column wrap;
 }
-.sous-title
+.subtitle
 {
     margin-top: -10px;
 }
-.search-localisation 
+/*SEARCH-BUTTON*/
+.search-button 
 {
     display: flex;
     flex-flow: row wrap;
@@ -78,16 +79,17 @@ h6
     margin-top: 5px; 
 }
 
-.gps
+.left-search-button
 {
     width: 50px;
     height: 50px;
+    line-height: 50px;
     margin-left: 1px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     background-color: #f2f2f2
 }
-.icone
+.icone-left-seach
 { 
     color: black;
     font-size: 20px;
@@ -96,7 +98,7 @@ h6
     margin-top: 15px;
 
 }
-.input
+.input-search-button
 {
     border-color: #f2f2f2;
     width: 250px;
@@ -120,10 +122,12 @@ button
     cursor: pointer; 
 }
 
-.searchicon
+.search-icon
 {
   color:#0065FC;
 }
+/*FILTER*/
+
 .filter
 {
     display: flex;
@@ -131,13 +135,14 @@ button
     justify-content: flex-start;
     align-items: center;
 }
-.catégories
+.categories
 {
     border: 2px solid #d9d9d9;
     border-radius: 30px;
     height: 54px;
     border-left: none; 
     margin-left: 30px;
+    margin-top: 30px;
 }
 .icons
 {
@@ -182,14 +187,12 @@ button
   {
     background-color: black;
   }
-.infoss
-  {
-    display: flex;
-    flex-flow: row wrap;
-  }
+  /*INFOMATION ICON*/
+
 .info
   {   
     width: 20px;
+    height: 20px;
     padding-left: 10px;
     padding-top: 5px;
     padding-bottom:5px;
@@ -221,7 +224,7 @@ nav li
 {
     margin-right: 50px;
 }
-.inscript
+.inscription
 {
     color: #0065FC;
     font-weight: bold;
@@ -251,15 +254,19 @@ nav a:hover
 }
 .simple
 {
-    color: #0065FC; 
+    color: #0065FC;
+    font-size: 13px;
+    margin-right: -3px; 
 }
 .white
 {
-    color: #f2f2f2  
+    color: #f2f2f2;
+    font-size: 13px;
+    margin-right: -3px;  
 }
                       /*..........ACCOMODATION..........*/
 
-.container1
+.container-accomodation
 {
     width: 1081px;
     height: 707px;
@@ -268,7 +275,7 @@ nav a:hover
     border-radius: 8px;
     margin-left: 50px;
 }
-.container1-1
+.accomodation-location
 {
     width: 810px;
     height: 450px;
@@ -276,8 +283,8 @@ nav a:hover
     flex-flow: column wrap;
     border-radius: 8px;
     justify-content: space-around;
-    margin-top: 100px;
-    margin-left: -240px;
+    margin-top: 80px;
+    margin-left: -280px;
     gap: 30px;
 
 }
@@ -290,33 +297,32 @@ nav a:hover
 {    
     width: 246px;
     height: 204px;
-    border-radius: 8px;
+    border-radius: 15px;
     box-shadow: 0 0 8px 3px #d8d7d7;
     background-color: white;
 }
 
 .image-marseille
 {
-    width: 246px;
+    width: 235px;
     height: 120px;
     object-fit:cover;
     border-radius: 8px 8px 0 0;
+    margin-top: 4px;
+    margin-left: 5px;
 }
 
-.p-hebe
+.block-star
 {
-    color: black;
-    margin-top: -0px;
-    margin-bottom: 25px;
-    margin-left: 18px; 
+    margin-left: 20px;
+    margin-top: -10px;
 }
 .star
-{ 
-    margin-top: -16px;
-    margin-left: 18px;
+{
+    margin-top: -15px;
 }
 
-.affich
+.show-more
 {
     text-decoration: none;
     font-weight: bold;
@@ -327,7 +333,7 @@ nav a:hover
     margin-left: 70px;
 }
                     /*----- MOST POPULAR-----*/
-.container2
+.container-most-popular
 {
     width: 420px;
     height: 707px;
@@ -338,13 +344,12 @@ nav a:hover
     justify-content:space-around;
     margin-right: 250px;
 }
-.title-popular1
+.h2-popular
 {
     text-align: left;
-    margin-top: -10px;
-    margin-left: 20px;
+    margin-left: 40px;
 }
-.logo-popular
+.icon-popular
 {
     font-size: 25px;
     position: absolute;
@@ -352,7 +357,7 @@ nav a:hover
     margin-top: -45px;
 }
 
-.popular
+.popular-location
 {
     width: 345px;
     height: 145px;
@@ -360,10 +365,10 @@ nav a:hover
     box-shadow: 0 0 8px 3px #d8d7d7;
     background-color: white;
     margin-left: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 45px;
 }
 
-.imagepopular
+.image-popular
 {
     width: 120px;
     height: 135px;
@@ -380,7 +385,7 @@ nav a:hover
 }
                   /*..........ACTIVITIES..........*/
 
-.conteneur3
+.container-activities
 {
     overflow: auto;
     width: 1900px;
@@ -403,7 +408,7 @@ nav a:hover
 {
     margin-top: 15px;
 }
-.act-big
+.act-port
 {
 
     width: 297px;
@@ -509,7 +514,7 @@ footer a:hover
 {
     color: #0065FC;
 }
-.pied
+.footer-blocks
 {
     background-color:#f2f2f2;
     display: flex;
@@ -530,12 +535,9 @@ footer a:hover
     padding-left: 400px;
 }
 
-@media screen and (min-width: 400px) and (max-width: 1028px)
+/*RESPONSIVE TABLET*/
+@media screen and (max-width: 1028px)
 {
-    body
-    {
-        width: 1228px;
-    }
     h1
     {
       margin-top: 50px;
@@ -548,7 +550,8 @@ footer a:hover
     /*HEADER*/
     .header-content
     {
-      margin-left: -5px;
+        width: 1028px;
+        margin-left: -5px;
     }
     .filter
     {
@@ -562,7 +565,7 @@ footer a:hover
       margin-top: -30px;
       margin-bottom: 30px;
     }
-    .catégories
+    .categories
     {
         margin-top: 10px;
     }
@@ -580,7 +583,7 @@ footer a:hover
      nav ul
     { 
         margin-top: -670px;
-        margin-left: 300px;
+        margin-left: 400px;
     }
     
     /*MIDDLE SECTION*/
@@ -590,17 +593,18 @@ footer a:hover
       flex-flow: row wrap;
     }
      /*ACCOMODATION*/
-     .container1
+     .container-accomodation
      {
          width: 375px;
          height: 1500px;
-         margin-left: -10px;
+         margin-left: 5px;
          background-color: white;
      }
-     .container1-1
+     .accomodation-location
      {
          width: 375px;
          height: 1350px;
+         margin-top: 120px;
      }
      .marseille
      {    
@@ -610,41 +614,42 @@ footer a:hover
      }
      .image-marseille
      {
-         width: 340px;
+         width: 330px;
          height: 115px;
      }
+     .show-more
+     {
+        margin-top: 1500px;
+        margin-left: 20px;
+     }
     /*----- MOST POPULAR-----*/
-    .container2
+    .container-most-popular
     {
         width: 375px;
         height: 580px;
         margin-right: 40px;
         background-color: white;
-        margin-top: 30px;
+        margin-top: 120px;
     }
-    .title-popular1
+    .h2-popular
     {
         margin-left: 15px;
+        margin-top: -100px;
     }
-    .popular
+    .popular-location
     {
-        margin-left: 15px
-    }
-    .affich
-    {
-       margin-top: 1500px;
-       margin-left: 20px;
+        margin-left: 0px;
     }
 
     /*ACTIVITIES*/
     
-    .conteneur3
+    .container-activities
     {
         width: 800px;
         height: 900px;
         display: flex;
         justify-content: left;
-        margin-top: 20px;
+        margin-top: 40px;
         margin-left: 5px;
     }
     .activities
@@ -664,7 +669,7 @@ footer a:hover
       box-shadow: 0 0 8px 3px #d8d7d7;
       margin-bottom: 30px;
     }
-    .act-big
+    .act-port
     {
         margin-right: -80px;
     }
@@ -679,32 +684,165 @@ footer a:hover
       margin-right: 430px;
       margin-top: -258px;
     }
-    .mobile-imgact
+    .mobile-img-act
     {
       width: 340px;
       height: 135px;
       border-radius: 15px 15px 0 0;
     }
     /*FOOTER*/
-    .pied
+    .footer-blocks
     {
         flex-flow: row wrap;
         width: 1028px;
         height: 250px;
-        margin-top: 100px;
+        margin-top: 30px;
         padding-top: 55px;
     }
     .about
     {
-        padding-left: 10px;
+        padding-left: 20px;
     }
      .hebe
     {
-        padding-left: 50px;
+        padding-left: 100px;
     }
     .contact
     {
-        padding-left: 70px;
+        padding-left: 150px;
     }
-
+    
 }
+/*RESPONSIVE MOBILE*/
+
+@media screen and (max-device-width: 375px) 
+{
+    h1{
+        margin-top: 200px;
+    }
+    /*HEADER*/
+    .header-content
+    {
+        width: 375px;
+    }
+    .search-button
+    {
+        margin-top: 20px;
+    }
+    button
+    {
+        width: 50px;
+        height: 50px;
+    }
+    span
+    {
+      visibility: hidden;
+    }
+    .search-icon
+    {
+        font-size: 20px;
+        color:white;
+        margin-top: 15px;
+        position: absolute;
+        margin-left: -82px;
+    }
+    /*NAVIGATION-HEADER*/
+    nav ul{
+        margin-top: -750px;
+        border-bottom: 2px solid #f2f2f2;
+        padding-bottom: 20px;
+        margin-left: 0
+    }
+    .inscription
+    {
+        margin-top: -150px;
+        margin-left: -70px
+    }
+    nav a:hover
+    {
+        border-bottom: 2px solid #0065FC;
+        border-top: none;
+    }
+    nav a{
+        padding-bottom: 20px;
+    }
+    /*MIDDLE-SECTION*/
+    .section-up
+    {
+        flex-flow: column-reverse wrap;
+    }
+    /*MOST-POPULAR*/
+    .container-most-popular
+    {
+        margin-left: 8px;
+    }
+    .h2-popular{
+        margin-left: 0;
+    }
+    .icon-popular
+    {
+        margin-left: 300px
+    }
+    /*ACCOMODATION*/
+    .container-accomodation{
+        margin-left: 2px;
+    }
+    /*ACTIVITIES*/
+    .container-activities
+    {
+        width: auto;
+        height: 1545px;
+        margin-left: 10px;
+    }
+    .activities
+    {
+        flex-flow: column wrap;
+        gap: 10px;
+        margin-left: -95px;
+    }
+    .act-port
+    {
+        margin-top: 50px;
+    }
+    .act-fort
+    {
+        margin-top: -35px;
+        margin-left: 0px;
+    }
+    .act-frioul
+    {
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+    .act-notredame
+    {
+        margin-left: 0px;
+    }
+    .act-longchamp
+    {
+        margin: 0;
+        margin-top: -35px;
+    }
+    .act-national{
+        margin: 0;
+        margin-top: -25px;
+    }
+    /*FOOTER*/
+    .footer-blocks
+    {
+      width: auto;
+      flex-flow: column wrap;
+      height: auto;
+    }
+    .hebe
+    {
+        padding-left: 20px;
+    }
+    .contact
+    {
+        padding-left: 20px;
+    }
+    
+}
+
+
