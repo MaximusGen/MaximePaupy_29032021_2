@@ -17,7 +17,7 @@ h1,nav li
 }
 h2
 {
-  font-size: 19px;
+  font-size: 22px;
   color: black;
   font-weight: bold;
 }
@@ -44,10 +44,7 @@ h6
   font-size: 20px;
 }
 
-/*header*/
-
-
-/*En tête Reservia*/
+/*HEADER*/
 
 header
 {
@@ -55,12 +52,12 @@ header
   grid-template-columns:repeat (12, 1fr);
   grid-gap: 20px;
 }
-.logoreservia
+.logo-reservia
 {
   width: 110px;
   height: 50px;
 }
-.col6
+.left-part-header
 {
   grid-column-end: span 7;
   margin-left: 50px;   
@@ -72,7 +69,7 @@ header
   justify-content: stretch; 
 }
 
-.gps
+.icon-gps
 {
   width: 50px;
   height: 50px;
@@ -81,7 +78,7 @@ header
   border-bottom-left-radius: 15px;
   background-color: #f2f2f2
 }
-.icone
+.icon-gps-size
 {
   color: black;
   font-size: 20px;
@@ -117,6 +114,10 @@ button
   border-bottom-right-radius: 15px;
   cursor: pointer; 
 }
+.search-icon
+{
+  visibility: hidden;
+}
 /*FILTER HEADER*/
 .filter
 {
@@ -124,7 +125,7 @@ button
     flex-flow: row wrap;
     grid-column: 1/span 7;
 }
-.catégories
+.categories
 {
     border: 2px solid #d9d9d9;
     border-radius: 30px;
@@ -156,11 +157,11 @@ button
   {
     width: 185px;
   }
-.fami
+.family
   {
     width: 150px;
   }
-.roman
+.romantique
   {
     width: 175px;
   }
@@ -168,7 +169,7 @@ button
   {
     width: 225px;
   }
-.catégories:hover
+.categories:hover
   {
     border: 2px solid black;
   }
@@ -177,11 +178,6 @@ button
     background-color: black;
   }
   /*INFO HEADER*/
-.infoss
-  {
-    display: flex;
-    flex-flow: row wrap;
-  }
 .info
   {   
     width: 20px;
@@ -213,20 +209,12 @@ nav ul
   display: flex;
   justify-content: flex-end; 
 }
-.li-nav
+nav li
 {
-  margin-right: 50px;
+   margin-right: 40px;
 }
 
-.he
-{
-  padding-right: 50px;
-}
-.ac
-{
-  padding-right: 50px;
-}
-.ins
+.inscription
 {
   color: #0065FC;
   font-weight: bold;
@@ -254,134 +242,112 @@ nav a:hover
 }
 .simple
 {
-  color: #0065FC; 
+    color: #0065FC;
+    font-size: 13px;
+    margin-right: -3px; 
 }
 .white
 {
-  color: #f2f2f2  
+    color: #f2f2f2;
+    font-size: 13px;
+    margin-right: -3px;  
 }
 
 /*ACCOMODATION*/
-.container1
+.container-accomodation
 {
-  width: 1081px;
-  height: 707px;
-  display: grid;
-  grid-column: 1/8;
-  background-color: #f2f2f2;
-  border-radius: 8px;
-  margin-left: 50px;
+    width: 1081px;
+    height: 707px;
+    display: flex;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    display: grid;
+    grid-column: 1/8;
+    margin-left: 50px;
+}
+.marseille-rental
+{
+    width: 810px;
+    height: 450px;
+    display: flex;
+    flex-flow: column wrap;
+    border-radius: 8px;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: -180px;
+    margin-left: 90px;
 }
 #nav-hebe
 {
-  margin-left: 60px;
-  margin-top: 30px;
-} 
+    margin-left: 60px;
+    margin-top: 30px;
+}
 .marseille
-{
-  width: 246px;
-  height: 204px;
-  border-radius: 8px;
-  box-shadow: 0 0 8px 3px #d8d7d7;
-  background-color: white;
-  margin-bottom: 30px;
-}
-.mars
-{
-  grid-column: 1/2;
-  margin-top: -80px;
-  margin-left: 80px;
-}
-.mars-1
-{
-  grid-column: 3/4;
-  margin-top: -80px;
-  margin-left: -270px;
-}
-.mars-2
-{
-  grid-column: 5/6;
-  margin-top: -80px;
-  margin-left: -300px;
-}
-.marseille-1
-{
-  width: 246px;
-  height: 204px;
-  border-radius: 8px;
-  box-shadow: 0 0 8px 3px #d8d7d7;
-  background-color: white;
-}
-.marseille-2
-{
-  width: 246px;
-  height: 204px;
-  border-radius: 8px;
-  box-shadow: 0 0 8px 3px #d8d7d7;
-  background-color: white;
-  grid-column: 5/6;
+{    
+    width: 246px;
+    height: 204px;
+    border-radius: 15px;
+    box-shadow: 0 0 8px 3px #d8d7d7;
+    background-color: white;
 }
 
-.image-mars
+.image-marseille
 {
-  width: 246px;
-  height: 120px;
-  object-fit:cover;
-  border-radius: 8px 8px 0 0;
+    width: 235px;
+    height: 120px;
+    object-fit:cover;
+    border-radius: 8px 8px 0 0;
+    margin-top: 4px;
+    margin-left: 5px;
 }
-.p-hebe
+
+.p-star
 {
-    color: black;
-    margin-bottom: 25px;
-    margin-left: 18px;
-    margin-top: -0px; 
+    margin-left: 20px;
+    margin-top: -12px;
 }
 .star
-{ 
-    margin-top: -16px;
-    margin-left: 18px;
+{
+    margin-top: -14px;
 }
 
-.affich
+.show-more
 {
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 20px;
-  color: black;
-  position: absolute;
-  margin-top: 32%;
-  margin-left: 70px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    margin-top: 32%;
+    margin-left: 70px;
 }
            /*MOST POPULAR*/
-.container2
+.container-most-popular
 {
   width: 420px;
   height: 707px;
-  border-radius: 8px;
+  border-radius: 15px;
+  display: flex;
+  flex-flow: column wrap;
   background-color: #f2f2f2;
-  margin-right: 300px;
+  justify-content:space-around;
+  margin-right: 250px;
   grid-column: 9/12;
 }
-.title-popular1
+.title-popular
 {
-  margin-left: 40px ;
-  margin-top: 30px;
+  text-align: left;
+  margin-left: 40px;
 }
 .logo-popular
 {
   font-size: 25px;
   position: absolute;
-  margin-left: 370px;
+  margin-left: 350px;
   margin-top: -45px;
 }
-.popularcontent
-{
-  display: flex;
-  flex-flow: column wrap;
-  margin-top:70px;
-}
 
-.popular
+.popular-rental
 {
   width: 345px;
   height: 145px;
@@ -389,10 +355,10 @@ nav a:hover
   box-shadow: 0 0 8px 3px #d8d7d7;
   background-color: white;
   margin-left: 40px;
-  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
-.imagepopular
+.image-popular
 {
   width: 120px;
   height: 135px;
@@ -400,21 +366,15 @@ nav a:hover
   margin-top: 5px;
   margin-left: 5px;
 }
-
-.nuitpopular
+.text-popular
 {
-  color: black;
-  margin-top: -80px;
-  margin-left: 140px;    
-}
-.star-popular
-{
-  color:#0065FC;
+  font-size: 17px;
   margin-left: 140px;
+  margin-top: -90px;
 }
 /*ACTIVITIES*/
 
-.container3
+.container-activities
 {
   width: 1800px;
   height: 600px;
@@ -422,7 +382,7 @@ nav a:hover
   grid-column: 1/13;
   margin-top: 50px;
 }
-.title-container3
+.title-activities
 {
   margin-left: 50px;
   margin-top: 50px;
@@ -431,28 +391,28 @@ nav a:hover
 {
   margin-top: 50px;
 }
-.title-act
+.h3-activities-rental
 {
   margin-top: 15px;
 }
-.act-big
+.act-port
 {
   width: 297px;
   height: 450px;
-  border-radius: 8px;
+  border-radius: 15px;
   box-shadow: 0 0 6px 3px #d8d7d7;
   grid-column: 1/2;
   margin-left: 50px;
 
 }
-.image-big
+.image-port
 {
   width: 297px;
   height:390px ;
   object-fit: cover;
-  border-radius: 8px 8px 0 0;
+  border-radius: 15px 15px 0 0;
 }
-.actcol1
+.act-col1
 {
   grid-column: 2/3;
   margin-left: -150px;
@@ -461,7 +421,7 @@ nav a:hover
 {
   width: 356px;
   height: 212px;
-  border-radius: 8px;
+  border-radius: 15px;
   box-shadow: 0 0 6px 3px #d8d7d7; 
 }
 .image-fort
@@ -469,49 +429,51 @@ nav a:hover
   width: 356px;
   height: 150px;
   object-fit: cover;
-  border-radius: 8px 8px 0 0;
+  border-radius: 15px 15px 0 0;
 }
 .act-frioul
 {
   width: 356px;
-  height: 164px;
-  border-radius: 10px;
+  height: 180px;
+  border-radius: 15px;
   box-shadow: 0 0 6px 3px #d8d7d7;
   margin-top: 60px;
 }
 .image-frioul
 {
   width: 356px;
-  height: 110px;
+  height: 120px;
   object-fit: cover;
-  border-radius: 8px 8px 0 0;
+  border-radius: 15px 15px 0 0;
 }
 .act-national
 {
   width: 310px;
   height: 450px;
-  border-radius: 8px;
+  border-radius: 15px;
   box-shadow: 0 0 6px 3px #d8d7d7;
   grid-column: 3/4;
   margin-left: -150px;
+  margin-top: -5px;
 }
-.actcol2
+.act-col2
 {
   grid-column: 4/5;
-  margin-left:-150px; 
+  margin-left:-150px;
+  margin-top: -5px; 
 }
 .image-national
 {
   width: 310px;
   height: 390px;
   object-fit: cover;
-  border-radius: 8px 8px 0 0;
+  border-radius: 15px 15px 0 0;
 }
 .act-notredame
 {
   width: 356px;
   height: 212px;
-  border-radius: 8px;
+  border-radius: 15px;
   box-shadow: 0 0 6px 3px #d8d7d7;
 }
 .image-notredame
@@ -519,14 +481,14 @@ nav a:hover
   width: 356px;
   height: 150px;
   object-fit: cover;
-  border-radius: 8px 8px 0 0;
+  border-radius: 15px 15px 0 0;
 }
 
 .act-longchamp
 {
   width: 356px;
   height: 212px;
-  border-radius: 8px;
+  border-radius: 15px;
   box-shadow: 0 0 6px 3px #d8d7d7;
   margin-top: 30px;
 }
@@ -535,7 +497,7 @@ nav a:hover
   width: 356px;
   height: 150px;
   object-fit: cover;
-  border-radius: 8px 8px 0 0;
+  border-radius: 15px 15px 0 0;
 }
 /* Footer */
 
@@ -548,7 +510,7 @@ footer a:hover
 {
   color: #0065FC;
 }
-.pied
+.charters
 {
   display: grid;
   grid-template-columns: repeat(12,1fr);
