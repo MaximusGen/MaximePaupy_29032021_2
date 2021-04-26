@@ -13,7 +13,7 @@ body
     font-family: 'raleway-variable';
 }
 
-h1,nav li
+h1
 {
     font-size: 20px;
 }
@@ -44,6 +44,7 @@ h5
 h6
 {
     font-size: 20px;
+    margin-top: 50px;
 }
                   /*..........HEADER RESERVIA..........*/
 
@@ -53,22 +54,65 @@ h6
     flex-flow: row wrap;
     justify-content: space-between;
     align-content: flex-start;
-    margin-left: 50px;
 }
+/*NAVIGATION MENU*/
+
 .logo-reservia
 {
     width: 110px;
-    height: 50px;
+}
+.nav-menu
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+nav
+{
+    display: flex;
+}
+nav ul
+{ 
+    list-style-type:none;
+    display: flex;
+}
+nav li
+{
+    font-size: 18px;
+    padding: 10px 30px
+}
+.inscription
+{
+    color: #0065FC;
+    font-weight: bold;
+    padding: 10px 30px;
+    align-self: center;
 }
 
-.logo-content
-{   
-    display: flex;
-    flex-flow: column wrap;
+nav a
+{
+    text-decoration: none;
+    color: black;
+
 }
+.nav-border:hover
+{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+    padding-top: 30px;
+}
+/*HEADER-FILTER-SEARCH*/
+
 .subtitle
 {
     margin-top: -10px;
+}
+.content-header
+{
+    margin-left: 50px;
 }
 /*SEARCH-BUTTON*/
 .search-button 
@@ -142,7 +186,6 @@ button
     height: 54px;
     border-left: none; 
     margin-left: 30px;
-    margin-top: 30px;
 }
 .icons
 {
@@ -179,7 +222,7 @@ button
   {
     width: 225px;
   }
-.catégories:hover
+.categories:hover
   {
     border: 2px solid black;
   }
@@ -201,7 +244,7 @@ button
     border: 2px solid #d9d9d9;
     border-radius: 30px;
     line-height: 20px;
-    margin-top: -5px;
+    margin-top: 10px;
   }
 .info-text
   {
@@ -210,39 +253,6 @@ button
     margin-top: -25px;
   }
 
-                       /*..........NAVIGATION..........*/
-
-nav ul
-{ 
-    list-style-type:none;
-    display: flex;
-    margin-top: -340px;
-    padding-top: 35px;
-    margin-left: 1400px;
-}
-nav li
-{
-    margin-right: 50px;
-}
-.inscription
-{
-    color: #0065FC;
-    font-weight: bold;
-}
-
-nav a
-{
-    text-decoration: none;
-    color: black;
-
-}
-nav a:hover
-{
-    color: #0065FC;
-    border-top: 2px solid #0065FC;
-    padding-top: 40px;
-}
-
                       /*..........HIGH SECTION..........*/
 
 .section-up
@@ -250,6 +260,7 @@ nav a:hover
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+    gap: 45px;
 
 }
 .simple
@@ -342,7 +353,6 @@ nav a:hover
     border-radius: 8px;
     background-color: #f2f2f2;
     justify-content:space-around;
-    margin-right: 250px;
 }
 .h2-popular
 {
@@ -504,23 +514,17 @@ nav a:hover
 }
 
               /*..........FOOTER..........*/
-
-footer a
+footer
 {
-    color: black;
-    text-decoration: none;
-}
-footer a:hover
-{
-    color: #0065FC;
+    background-color:#f2f2f2;
+    width: 100%;
+    height: 215px;
 }
 .footer-blocks
 {
-    background-color:#f2f2f2;
     display: flex;
     justify-content:flex-start;
     padding-top: 30px;
-    height: 215px;
 }
 .about
 {
@@ -534,10 +538,22 @@ footer a:hover
 {
     padding-left: 400px;
 }
+footer a
+{
+    color: black;
+    text-decoration: none;
+}
+footer a:hover
+{
+    color: #0065FC;
+}
 
 /*RESPONSIVE TABLET*/
-@media screen and (max-width: 1028px)
+@media screen and (max-width: 1428px)
 {
+    body{
+        width: 100%;
+    }
     h1
     {
       margin-top: 50px;
@@ -548,48 +564,28 @@ footer a:hover
     }
 
     /*HEADER*/
-    .header-content
+    .nav-menu
     {
-        width: 1028px;
-        margin-left: -5px;
+        margin-left: 0px;
     }
-    .filter
+   
+    nav
     {
-        display: block;
-        justify-content: space-around;
+        margin-left: 0px;
     }
-    .filter-media
+    .content-header
     {
-      display: flex;
-      flex-flow: column wrap;
-      margin-top: -30px;
-      margin-bottom: 30px;
+        width: 100% ;
+        margin-left: 0px;
     }
     .categories
     {
         margin-top: 10px;
     }
-    .info
-    {
-     margin-top: 30px;
-    }
-    .info-text
-      {
-        font-size: 16px;  
-        margin-top: -30px;
-      }
-     /*NAVIGATION*/
-    
-     nav ul
-    { 
-        margin-top: -670px;
-        margin-left: 400px;
-    }
-    
-    /*MIDDLE SECTION*/
+    /*SECTIONS*/
     .section-up
     {
-      width: 800px;
+      width: 100%;
       flex-flow: row wrap;
     }
      /*ACCOMODATION*/
@@ -627,9 +623,9 @@ footer a:hover
     {
         width: 375px;
         height: 580px;
-        margin-right: 40px;
+        margin-right: 80px;
         background-color: white;
-        margin-top: 120px;
+        margin-top: 130px;
     }
     .h2-popular
     {
@@ -650,7 +646,7 @@ footer a:hover
         display: flex;
         justify-content: left;
         margin-top: 40px;
-        margin-left: 5px;
+        margin-left: 0px;
     }
     .activities
     {
@@ -672,6 +668,15 @@ footer a:hover
     .act-port
     {
         margin-right: -80px;
+        margin-top: 30px;
+    }
+    .act-fort
+    {
+        margin-top: 30px;
+    }
+    .act-frioul
+    {
+        margin-top: 55px;
     }
     .act-national
     {
@@ -691,14 +696,6 @@ footer a:hover
       border-radius: 15px 15px 0 0;
     }
     /*FOOTER*/
-    .footer-blocks
-    {
-        flex-flow: row wrap;
-        width: 1028px;
-        height: 250px;
-        margin-top: 30px;
-        padding-top: 55px;
-    }
     .about
     {
         padding-left: 20px;
@@ -718,7 +715,7 @@ footer a:hover
 @media screen and (max-device-width: 375px) 
 {
     h1{
-        margin-top: 200px;
+        margin-top: 150px;
     }
     /*HEADER*/
     .header-content
@@ -766,6 +763,9 @@ footer a:hover
     nav a{
         padding-bottom: 20px;
     }
+    .inscription{
+        margin-top: -100px;
+    }
     /*MIDDLE-SECTION*/
     .section-up
     {
@@ -798,7 +798,7 @@ footer a:hover
     {
         flex-flow: column wrap;
         gap: 10px;
-        margin-left: -95px;
+        margin-left: -200px;
     }
     .act-port
     {
