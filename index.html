@@ -4,60 +4,62 @@
 <head>
   <meta charset="utf-8" />
   <title>Réservia,FLEXBOX</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/styles.css" />
   <script src="https://kit.fontawesome.com/79e3608237.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <!----------HEADER RESERVIA--------------->
-
-  <header class="header-content">
-    <!--MENU-NAV-->
-    <div class="nav-menu">
-      <a href="index.html"><img src="logo/Reservia@3x.png" alt="logo reservia" class="logo-reservia" /></a>
-      <nav>
-        <ul>
-          <li><a class="nav-border" href="#nav-hebe">Hébergement</a></li>
-          <li><a class="nav-border" href="#nav-act">Activités</a></li>
-        </ul>
-        <a href="#" class="inscription">S'inscrire</a>
-      </nav>
-    </div>
-    <!--HEADER-FILTER-SEARCH-->
-    <div class="content-header">
-      <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-      <p class="subtitle">En plein centre ville ou en pleine nature</p>
-      <!--SERCH-BUTTON-->
-      <div class="search-button">
-        <div class="left-search-button">
-          <i class="fas fa-map-marker-alt icone-left-seach"></i>
-        </div>
-        <input type="text" placeholder="Marseille, France" class="input-search-button" />
-        <button><span>Recherche</span><i class="fas fa-search search-icon"></i></button>
+  <div class="contents-header-sections">
+    <header class="header-content">
+      <!--MENU-NAV-->
+      <div class="nav-menu">
+        <a href="index.html"><img src="logo/Reservia@3x.png" alt="logo reservia" class="logo-reservia" /></a>
+        <nav>
+          <ul>
+            <li><a href="#nav-hebe">Hébergement</a></li>
+            <li><a href="#nav-act">Activités</a></li>
+          </ul>
+          <a href="#" class="inscription">S'inscrire</a>
+        </nav>
       </div>
-      <!--FILTERS-->
-      <div class="filter">
-        <h6>Filtres</h6>
-        <div class="categories eco">
-          <i class="fas fa-money-bill-wave icons"></i>
-          <a href="#" class="a-filter">Économique</a>
+      <!--HEADER-FILTER-SEARCH-->
+      <div class="content-header">
+        <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+        <p class="subtitle">En plein centre ville ou en pleine nature</p>
+        <!--SERCH-BUTTON-->
+        <div class="search-button">
+          <div class="left-search-button">
+            <i class="fas fa-map-marker-alt icone-left-seach"></i>
+          </div>
+          <input type="text" placeholder="Marseille, France" class="input-search-button" />
+          <button><span>Recherche</span><i class="fas fa-search search-icon"></i></button>
         </div>
-        <div class="categories fami">
-          <i class="fas fa-child icons"></i>
-          <a href="#" class="a-filter">Familial</a>
+        <!--FILTERS-->
+        <div class="filter">
+          <h6>Filtres</h6>
+          <div class="categories eco">
+            <i class="fas fa-money-bill-wave icons"></i>
+            <a href="#" class="a-filter">Économique</a>
+          </div>
+          <div class="categories fami">
+            <i class="fas fa-child icons"></i>
+            <a href="#" class="a-filter">Familial</a>
+          </div>
+          <div class="categories roman">
+            <i class="fas fa-heart icons"></i>
+            <a href="#" class="a-filter">Romantique</a>
+          </div>
+          <div class="categories animal">
+            <i class="fas fa-dog icons"></i>
+            <a href="#" class="a-filter">Animaux autorisés</a>
+          </div>
         </div>
-        <div class="categories roman">
-          <i class="fas fa-heart icons"></i>
-          <a href="#" class="a-filter">Romantique</a>
-        </div>
-        <div class="categories animal">
-          <i class="fas fa-dog icons"></i>
-          <a href="#" class="a-filter">Animaux autorisés</a>
-        </div>
+        <i class="fas fa-info info"></i>
+        <p class="info-text">Plus de 500 logements sont disponible dans cette ville</p>
       </div>
-      <i class="fas fa-info info"></i>
-      <p class="info-text">Plus de 500 logements sont disponible dans cette ville</p>
-    </div>
+    </header>
     <!--SECTIONS-->
 
     <div class="section-up">
@@ -170,7 +172,7 @@
       <!--MOST POPULAR-->
 
       <section class="container-most-popular">
-        <div id="title-popular">
+        <div class="title-popular">
           <h2 class="h2-popular">Les plus populaires</h2>
           <i class="fas fa-chart-line icon-popular"></i>
         </div>
@@ -226,8 +228,9 @@
     <!--ACTIVITIES-->
     <section class="container-activities">
 
-
-      <h2><a id="nav-act">Activités à Marseille</a></h2>
+      <div class="title-activities">
+        <h2><a id="nav-act">Activités à Marseille</a></h2>
+      </div>
       <div class="activities">
 
 
@@ -279,31 +282,32 @@
         </article>
       </div>
     </section>
-    <!--FOOTER-->
-    <footer>
+  </div>
+  <!--FOOTER-->
+  <footer>
+    <div class="footer-line">
       <div class="footer-blocks">
-
         <div class="about footer-text">
-          <h2 class="title">A propos</h2>
+          <h2 class="title-footer">A propos</h2>
           <p><a href="#" class="footernav">Fonctionnement du site</a></p>
           <p><a href="#" class="footernav">Conditions général de vente</a></p>
           <p><a href="#" class="footernav">Données et confidentialité</a></p>
         </div>
 
         <div class="hebe footer-text">
-          <h2 class="title"><a></a>Nos hébergements</h2>
+          <h2 class="title-footer"><a></a>Nos hébergements</h2>
           <p><a href="#" class="footernav">Charte qualité</a></p>
           <p><a href="#" class="footernav">Soumettre vôtre hôtel</a></p>
         </div>
 
         <div class="contact footer-text">
-          <h2 class="title">Assistance</h2>
+          <h2 class="title-footer">Assistance</h2>
           <p><a href="#" class="footernav">Centre d'aide</a></p>
           <p><a href="#" class="footernav">Nous contacter</a></p>
         </div>
-
       </div>
-    </footer>
+    </div>
+  </footer>
 </body>
 
 </html>
