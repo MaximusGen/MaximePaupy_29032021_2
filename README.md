@@ -1,2 +1,3 @@
 # MaximePaupy_29032021_2
-This Branch use  only flexbox 
+ 
+ Projet OpenClassrooms, qui consiste à réaliser une interface Front-End d'un site de réservation de vacance à Marseille ( Réservia ).Cette branche utilise uniquement Flexbox
