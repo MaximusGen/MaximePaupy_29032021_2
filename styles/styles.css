@@ -40,6 +40,9 @@ h6 {
 	font-size: 20px;
 	margin-top: 50px;
 }
+img{
+	object-fit: cover;
+}
 .contents-header-sections {
 	max-width: 1450px;
 	margin: 0 auto;
@@ -88,8 +91,11 @@ nav a {
 	text-decoration: none;
 	color: black;
 }
-nav li:hover {
+nav a:hover
+{
 	color: #0065fc;
+}
+nav li:hover {
 	border-top: 2px solid #0065fc;
 	padding-top: 40px;
 	margin-top: -22px;
@@ -275,7 +281,6 @@ button {
 .image-marseille {
 	width: 235px;
 	height: 120px;
-	object-fit: cover;
 	border-radius: 8px 8px 0 0;
 	margin-top: 4px;
 	margin-left: 5px;
@@ -374,7 +379,6 @@ button {
 .image-port {
 	width: 297px;
 	height: 390px;
-	object-fit: cover;
 	border-radius: 8px 8px 0 0;
 }
 
@@ -388,7 +392,6 @@ button {
 .image-fort {
 	width: 340px;
 	height: 185px;
-	object-fit: cover;
 	border-radius: 8px 8px 0 0;
 }
 .act-frioul {
@@ -402,7 +405,6 @@ button {
 .image-frioul {
 	width: 340px;
 	height: 110px;
-	object-fit: cover;
 	border-radius: 8px 8px 0 0;
 }
 .act-national {
@@ -415,7 +417,6 @@ button {
 .image-national {
 	width: 310px;
 	height: 390px;
-	object-fit: cover;
 	border-radius: 8px 8px 0 0;
 }
 .act-notredame {
@@ -428,7 +429,6 @@ button {
 .image-notredame {
 	width: 346px;
 	height: 150px;
-	object-fit: cover;
 	border-radius: 8px 8px 0 0;
 }
 
@@ -443,7 +443,6 @@ button {
 .image-longchamp {
 	width: 346px;
 	height: 150px;
-	object-fit: cover;
 	border-radius: 8px 8px 0 0;
 }
 
@@ -587,6 +586,9 @@ footer a:hover {
 /*RESPONSIVE MOBILE*/
 
 @media screen and (max-width: 375px) {
+	body{
+		margin-left: 0px;
+	}
 	/*HEADER*/
 	.header-content {
 		width: 350px;
@@ -596,7 +598,7 @@ footer a:hover {
 		width: 100%;
 	}
 	nav ul {
-		margin-left: -50px;
+		margin-left: -60px;
 	}
 	nav li {
 		border-bottom: 2px solid #f2f2f2;
@@ -615,9 +617,6 @@ footer a:hover {
 		margin-top: -20px;
 	}
 	/*HEADER-CONTENT*/
-	.content-header {
-		margin-left: 0px;
-	}
 	.search-button {
 		margin-top: 20px;
 	}
@@ -657,7 +656,7 @@ footer a:hover {
 		background-color: #f2f2f2;
 		height: 650px;
 		margin-top: 30px;
-		width: 360px;
+		width: 375px;
 		border-radius: 0px;
 	}
 	.popular-location {
@@ -691,12 +690,15 @@ footer a:hover {
 	.marseille {
 		width: 335px;
 		height: 200px;
-		margin-left: -20px;
+		margin-left: -10px;
 	}
 	.image-marseille {
 		width: 325px;
 	}
 	/*ACTIVITIES*/
+	#nav-act{
+		margin-left: 10px;
+	}
 	.container-activities {
 		width: 100%;
 		height: 1545px;
@@ -732,7 +734,7 @@ footer a:hover {
 	}
 	/*FOOTER*/
 	.footer-line {
-		width: 360px;
+		width: 375px;
 		height: 600px;
 		margin-top: 30px;
 	}
