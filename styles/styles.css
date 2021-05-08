@@ -9,7 +9,6 @@
 
 body {
 	font-family: 'raleway-variable', 'sans-sherif';
-	box-sizing: border-box;
 }
 
 h1 {
@@ -27,14 +26,6 @@ h3 {
 	font-weight: bold;
 	margin: 4px;
 	padding-left: 15px;
-}
-h5 {
-	font-size: 17.5px;
-	color: black;
-	font-weight: bold;
-	padding-left: 140px;
-	margin-top: -130px;
-	position: absolute;
 }
 h6 {
 	font-size: 20px;
@@ -208,19 +199,16 @@ button {
 	background-color: black;
 }
 /*INFOMATION ICON*/
-
-.info {
-	width: 20px;
-	height: 20px;
-	padding-left: 10px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	color: #0065fc;
-	font-size: 20px;
+.buble-info{
+	width: 40px;
+	line-height:40px;
 	border: 2px solid #d9d9d9;
 	border-radius: 30px;
-	line-height: 20px;
-	margin-top: 10px;
+}
+.info {
+	color: #0065fc;
+	font-size: 20px;
+	padding: 0px 16px;
 }
 .info-text {
 	font-size: 18px;
@@ -236,12 +224,12 @@ button {
 	margin-top: 40px;
 	gap: 55px;
 }
-.simple {
+.blue-star {
 	color: #0065fc;
 	font-size: 13px;
 	margin-right: -3px;
 }
-.white {
+.white-star {
 	color: #f2f2f2;
 	font-size: 13px;
 	margin-right: -3px;
@@ -314,17 +302,14 @@ button {
 	justify-content: space-around;
 }
 .h2-popular {
-	text-align: left;
-	margin-left: 40px;
 	margin-top: -0px;
 }
 .title-popular {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 .icon-popular {
 	font-size: 25px;
-	padding: 0px 20px;
 }
 
 .popular-location {
@@ -335,6 +320,11 @@ button {
 	background-color: white;
 	margin-left: 40px;
 	margin-top: -30px;
+} 
+.popular-rental-title {
+
+    padding-left: 140px;
+	margin-top: -130px;
 }
 
 .image-popular {
@@ -347,8 +337,7 @@ button {
 
 .text-popular {
 	font-size: 17px;
-	margin-left: 140px;
-	margin-top: -90px;
+	margin-left: 145px;
 }
 /*..........ACTIVITIES..........*/
 
@@ -489,12 +478,18 @@ footer a:hover {
 	.categories {
 		margin-top: 10px;
 	}
+	.buble-info{
+		margin-top: 20px;
+	}
 	/*SECTIONS*/
 	.section-up {
 		width: 100%;
 		flex-flow: column-reverse wrap;
 	}
 	/*ACCOMODATION*/
+	.title-popular{
+		justify-content: space-between;
+	}
 	.container-accomodation {
 		width: 100%;
 		height: 1500px;
@@ -512,6 +507,9 @@ footer a:hover {
 	.image-marseille {
 		width: 530px;
 		height: 115px;
+	}
+	.popular-rental-title{
+		margin-left: 150px;
 	}
 	.show-more {
 		margin-top: 1500px;
@@ -641,10 +639,10 @@ footer a:hover {
 		margin-top: 150px;
 		margin-left: -30px;
 	}
-	.info {
-		margin-top: 30px;
+	.buble-info{
+		margin-top: 20px;
 	}
-	.info-text {
+	.info-text{
 		margin-top: -40px;
 	}
 	.section-up {
@@ -672,16 +670,16 @@ footer a:hover {
 		margin-top: 5px;
 		margin-left: 5px;
 	}
+	.popular-rental-title{
+		margin-left: 0px;
+	}
+
 	.h2-popular {
 		margin-left: 10px;
 	}
-	h5 {
-		margin-top: -130px;
-		margin-left: 0px;
-	}
 	.text-popular {
 		margin-left: 140px;
-		margin-top: -90px;
+		margin-top: 0px;
 	}
 	/*ACCOMODATION*/
 	.container-accomodation {
@@ -695,6 +693,9 @@ footer a:hover {
 	.image-marseille {
 		width: 325px;
 	}
+	#nav-hebe{
+		width: 100%;
+	}
 	/*ACTIVITIES*/
 	#nav-act{
 		margin-left: 10px;
@@ -707,30 +708,13 @@ footer a:hover {
 	.activities {
 		flex-flow: column wrap;
 		gap: 10px;
+		margin-left: -300px;
 	}
 	.mobile-act {
 		width: 335px;
 	}
 	.mobile-img-act {
 		width: 335px;
-	}
-	.act-port {
-		margin-left: 5px;
-	}
-	.act-fort {
-		margin-left: 5px;
-	}
-	.act-frioul {
-		margin-left: 5px;
-	}
-	.act-notredame {
-		margin-left: 5px;
-	}
-	.act-longchamp {
-		margin-left: 5px;
-	}
-	.act-national {
-		margin-left: 5px;
 	}
 	/*FOOTER*/
 	.footer-line {
