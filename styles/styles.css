@@ -496,9 +496,10 @@ footer a:hover {
 		background-color: white;
 	}
 	.accomodation-location {
+		width: 0px;
 		height: 1350px;
 		margin-top: 120px;
-		margin-left: -150px;
+		margin-left: -190px;
 	}
 	.marseille {
 		width: 540px;
@@ -684,6 +685,10 @@ footer a:hover {
 	/*ACCOMODATION*/
 	.container-accomodation {
 		width: 375px;
+		
+	}
+	.accomodation-location{
+		margin-left: -270px;
 	}
 	.marseille {
 		width: 335px;
@@ -692,9 +697,6 @@ footer a:hover {
 	}
 	.image-marseille {
 		width: 325px;
-	}
-	#nav-hebe{
-		width: 100%;
 	}
 	/*ACTIVITIES*/
 	#nav-act{
