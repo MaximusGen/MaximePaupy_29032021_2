@@ -8,7 +8,7 @@
 }
 
 body {
-	font-family: 'raleway-variable','raleway-medium','sans-sherif';
+	font-family: 'raleway-variable', 'raleway-medium', 'sans-sherif';
 }
 
 h1 {
@@ -31,7 +31,7 @@ h6 {
 	font-size: 20px;
 	margin-top: 50px;
 }
-img{
+img {
 	object-fit: cover;
 }
 .contents-header-sections {
@@ -82,8 +82,7 @@ nav a {
 	text-decoration: none;
 	color: black;
 }
-nav a:hover
-{
+nav a:hover {
 	color: #0065fc;
 }
 nav li:hover {
@@ -129,6 +128,9 @@ nav li:hover {
 	color: black;
 	font-size: 20px;
 	font-weight: bold;
+	border: none;
+	border-top: 2px solid #f2f2f2;
+	border-bottom: 2px solid #f2f2f2;
 }
 button {
 	margin-left: -1px;
@@ -156,52 +158,55 @@ button {
 	justify-content: flex-start;
 	align-items: center;
 }
-.categories {
-	border: 2px solid #d9d9d9;
-	border-radius: 30px;
-	height: 54px;
-	border-left: none;
-	margin-left: 30px;
+.filter-buble
+{
+	display: flex;
 }
-.icons {
-	color: #0065fc;
-	background-color: #deebff;
-	border-radius: 50%;
-	padding-left: 15px;
-	padding-top: 15px;
-	width: 40px;
-	height: 40px;
-	font-size: 20px;
+.filter-categories {
+    margin-left: 30px;
+    border: 2px solid #d9d9d9;
+    border-radius: 30px;
+    height: 50px;
+    border-left: none;
 }
-.a-filter {
-	text-decoration: none;
-	color: #000;
-	padding-left: 5px;
-	font-weight: bold;
-	font-size: 16px;
+.filter-icons {
+  background-color: #deebff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 45px;
+  color: #0065FC;
+  font-size: 20px;
 }
-.eco {
+.filter-link {
+  text-decoration: none;
+  color: #000;
+  padding-left: 5px;
+  font-weight: bold;
+  font-size: 16px;;
+}
+.economique {
 	width: 185px;
 }
-.fami {
+.familly {
 	width: 150px;
 }
-.roman {
+.romantique {
 	width: 175px;
 }
 .animal {
 	width: 225px;
 }
-.categories:hover {
+.filter-categories:hover {
 	border: 2px solid black;
+	background-color:#deebff ;
 }
-.icons:hover {
-	background-color: black;
-}
+
 /*INFOMATION ICON*/
-.buble-info{
+.buble-info {
 	width: 30px;
-	line-height:30px;
+	line-height: 30px;
 	border: 2px solid #d9d9d9;
 	border-radius: 30px;
 }
@@ -258,7 +263,7 @@ button {
 	margin-left: 40px;
 	margin-top: 30px;
 }
-.accomodation-link{
+.accomodation-link {
 	text-decoration: none;
 }
 .marseille {
@@ -315,7 +320,7 @@ button {
 .icon-popular {
 	font-size: 25px;
 }
-.popular-link{
+.popular-link {
 	text-decoration: none;
 }
 
@@ -327,10 +332,9 @@ button {
 	background-color: white;
 	margin-left: 40px;
 	margin-top: -30px;
-} 
+}
 .popular-rental-title {
-
-    padding-left: 140px;
+	padding-left: 140px;
 	margin-top: -130px;
 }
 
@@ -367,7 +371,7 @@ button {
 .title-act {
 	margin-top: 15px;
 }
-.activities-link{
+.activities-link {
 	text-decoration: none;
 }
 .act-port {
@@ -489,7 +493,7 @@ footer a:hover {
 	.categories {
 		margin-top: 10px;
 	}
-	.buble-info{
+	.buble-info {
 		margin-top: 20px;
 	}
 	/*SECTIONS*/
@@ -498,7 +502,7 @@ footer a:hover {
 		flex-flow: column-reverse wrap;
 	}
 	/*ACCOMODATION*/
-	.title-popular{
+	.title-popular {
 		justify-content: space-between;
 	}
 	.container-accomodation {
@@ -520,7 +524,7 @@ footer a:hover {
 		width: 530px;
 		height: 115px;
 	}
-	.popular-rental-title{
+	.popular-rental-title {
 		margin-left: 150px;
 	}
 	.show-more {
@@ -596,7 +600,7 @@ footer a:hover {
 /*RESPONSIVE MOBILE*/
 
 @media screen and (max-width: 375px) {
-	body{
+	body {
 		margin-left: 0px;
 	}
 	/*HEADER*/
@@ -651,10 +655,10 @@ footer a:hover {
 		margin-top: 150px;
 		margin-left: -30px;
 	}
-	.buble-info{
+	.buble-info {
 		margin-top: 20px;
 	}
-	.info-text{
+	.info-text {
 		margin-top: -40px;
 	}
 	.section-up {
@@ -682,7 +686,7 @@ footer a:hover {
 		margin-top: 5px;
 		margin-left: 5px;
 	}
-	.popular-rental-title{
+	.popular-rental-title {
 		margin-left: 0px;
 	}
 
@@ -696,9 +700,8 @@ footer a:hover {
 	/*ACCOMODATION*/
 	.container-accomodation {
 		width: 375px;
-		
 	}
-	.accomodation-location{
+	.accomodation-location {
 		margin-left: -270px;
 	}
 	.marseille {
@@ -710,7 +713,7 @@ footer a:hover {
 		width: 325px;
 	}
 	/*ACTIVITIES*/
-	#nav-act{
+	#nav-act {
 		margin-left: 10px;
 	}
 	.container-activities {
