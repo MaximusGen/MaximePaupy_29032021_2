@@ -65,17 +65,19 @@ nav {
 nav ul {
 	list-style-type: none;
 	display: flex;
+	order: 0;
 }
 nav li {
 	font-size: 18px;
-	padding: 0px 30px;
-	margin-top: 20px;
+	padding: 27px 30px;
+	order: 1;
 }
 .inscription {
 	color: #0065fc;
 	font-weight: bold;
-	padding: 38px 30px;
+	padding: 20px 30px;
 	align-self: center;
+	order: 2;
 }
 
 nav a {
@@ -88,7 +90,7 @@ nav a:hover {
 nav li:hover {
 	border-top: 2px solid #0065fc;
 	padding-top: 40px;
-	margin-top: -22px;
+	margin-top: -15px;
 }
 /*HEADER-FILTER-SEARCH*/
 
@@ -158,16 +160,15 @@ button {
 	justify-content: flex-start;
 	align-items: center;
 }
-.filter-buble
-{
+.filter-buble {
 	display: flex;
 }
 .filter-categories {
-    margin-left: 30px;
-    border: 2px solid #d9d9d9;
-    border-radius: 30px;
-    height: 50px;
-    border-left: none;
+  margin-left: 30px;
+  border: 2px solid #d9d9d9;
+  border-radius: 30px;
+  height: 50px;
+  border-left: none;
 }
 .filter-icons {
   background-color: #deebff;
@@ -180,11 +181,11 @@ button {
   font-size: 20px;
 }
 .filter-link {
-  text-decoration: none;
-  color: #000;
-  padding-left: 5px;
-  font-weight: bold;
-  font-size: 16px;;
+	text-decoration: none;
+	color: #000;
+	padding-left: 5px;
+	font-weight: bold;
+	font-size: 16px;
 }
 .economique {
 	width: 185px;
@@ -200,7 +201,7 @@ button {
 }
 .filter-categories:hover {
 	border: 2px solid black;
-	background-color:#deebff ;
+	background-color: #deebff;
 }
 
 /*INFOMATION ICON*/
@@ -487,14 +488,14 @@ footer a:hover {
 	}
 
 	/*HEADER*/
-	.filter {
-		flex-flow: row wrap;
-	}
-	.categories {
-		margin-top: 10px;
+	.filter-buble {
+		flex-wrap: wrap;
 	}
 	.buble-info {
 		margin-top: 20px;
+	}
+	.animal {
+		margin-top: 10px;
 	}
 	/*SECTIONS*/
 	.section-up {
@@ -611,6 +612,9 @@ footer a:hover {
 	.nav-menu {
 		width: 100%;
 	}
+	nav{
+		width: 350px;
+	}
 	nav ul {
 		margin-left: -60px;
 	}
@@ -651,9 +655,8 @@ footer a:hover {
 		position: absolute;
 		margin-left: -82px;
 	}
-	.eco {
-		margin-top: 150px;
-		margin-left: -30px;
+	.filter-categories {
+		margin-top: 10px;
 	}
 	.buble-info {
 		margin-top: 20px;
@@ -688,6 +691,9 @@ footer a:hover {
 	}
 	.popular-rental-title {
 		margin-left: 0px;
+	}
+	.icon-popular{
+		padding-right: 15px;
 	}
 
 	.h2-popular {
