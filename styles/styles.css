@@ -258,6 +258,9 @@ button {
 	margin-left: 40px;
 	margin-top: 30px;
 }
+.accomodation-link{
+	text-decoration: none;
+}
 .marseille {
 	width: 246px;
 	height: 204px;
@@ -277,6 +280,7 @@ button {
 .block-star {
 	margin-left: 20px;
 	margin-top: -11px;
+	color: black;
 }
 .star {
 	margin-top: -15px;
@@ -311,6 +315,9 @@ button {
 .icon-popular {
 	font-size: 25px;
 }
+.popular-link{
+	text-decoration: none;
+}
 
 .popular-location {
 	width: 345px;
@@ -338,6 +345,7 @@ button {
 .text-popular {
 	font-size: 17px;
 	margin-left: 145px;
+	color: black;
 }
 /*..........ACTIVITIES..........*/
 
@@ -358,6 +366,9 @@ button {
 }
 .title-act {
 	margin-top: 15px;
+}
+.activities-link{
+	text-decoration: none;
 }
 .act-port {
 	width: 297px;
