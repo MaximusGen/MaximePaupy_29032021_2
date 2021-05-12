@@ -14,6 +14,7 @@ body {
 h1 {
 	font-size: 20px;
 }
+
 h2 {
 	font-size: 22px;
 	color: black;
@@ -27,17 +28,21 @@ h3 {
 	margin: 4px;
 	padding-left: 15px;
 }
+
 h6 {
 	font-size: 20px;
 	margin-top: 50px;
 }
+
 img {
 	object-fit: cover;
 }
+
 .contents-header-sections {
 	max-width: 1450px;
 	margin: 0 auto;
 }
+
 
 /*..........HEADER RESERVIA..........*/
 
@@ -47,7 +52,10 @@ img {
 	justify-content: space-between;
 	align-content: flex-start;
 }
+
+
 /*NAVIGATION MENU*/
+
 .nav-menu {
 	display: flex;
 	justify-content: space-between;
@@ -55,11 +63,13 @@ img {
 	width: 1400px;
 	flex-wrap: wrap;
 }
+
 .logo-content {
 	flex-grow: 0;
 	padding-left: 10px;
 	order: 0;
 }
+
 nav ul {
 	list-style-type: none;
 	display: flex;
@@ -67,10 +77,12 @@ nav ul {
 	justify-content: flex-end;
 	margin-left: 51rem;
 }
+
 nav li {
 	font-size: 18px;
 	padding: 27px 30px;
 }
+
 .inscription {
 	color: #0065fc;
 	font-weight: bold;
@@ -78,27 +90,36 @@ nav li {
 	align-self: center;
 	order: 2;
 }
+
 nav a {
 	text-decoration: none;
 	color: black;
 }
+
 nav a:hover {
 	color: #0065fc;
 }
+
 nav li:hover {
 	border-top: 2px solid #0065fc;
 	padding-top: 40px;
 	margin-top: -15px;
 }
+
+
 /*HEADER-FILTER-SEARCH*/
 
 .subtitle {
 	margin-top: -10px;
 }
+
 .content-header {
 	margin-left: 10px;
 }
+
+
 /*SEARCH-BUTTON*/
+
 .search-button {
 	display: flex;
 	flex-flow: row wrap;
@@ -114,6 +135,7 @@ nav li:hover {
 	border-bottom-left-radius: 15px;
 	background-color: #f2f2f2;
 }
+
 .icone-left-seach {
 	color: black;
 	font-size: 20px;
@@ -121,6 +143,7 @@ nav li:hover {
 	margin-left: 15px;
 	margin-top: 15px;
 }
+
 .input-search-button {
 	border-color: #f2f2f2;
 	width: 250px;
@@ -131,6 +154,7 @@ nav li:hover {
 	border-top: 2px solid #f2f2f2;
 	border-bottom: 2px solid #f2f2f2;
 }
+
 button {
 	margin-left: -1px;
 	width: 130px;
@@ -149,6 +173,8 @@ button {
 .search-icon {
 	color: #0065fc;
 }
+
+
 /*FILTER*/
 
 .filter {
@@ -157,9 +183,11 @@ button {
 	justify-content: flex-start;
 	align-items: center;
 }
+
 .filter-buble {
 	display: flex;
 }
+
 .filter-categories {
 	display: flex;
 	align-items: center;
@@ -169,7 +197,8 @@ button {
 	height: 50px;
 	border-left: none;
 }
-.filter-icons {
+.filter-icons::before{
+	display: inline-block;
 	background-color: #deebff;
 	height: 50px;
 	width: 50px;
@@ -179,6 +208,7 @@ button {
 	color: #0065fc;
 	font-size: 20px;
 }
+
 .filter-link {
 	text-decoration: none;
 	color: #000;
@@ -186,40 +216,49 @@ button {
 	font-weight: bold;
 	font-size: 16px;
 }
+
 .economique {
 	width: 185px;
 }
+
 .familly {
 	width: 150px;
 }
+
 .romantique {
 	width: 175px;
 }
+
 .animal {
 	width: 225px;
 }
+
 .filter-categories:hover {
-	border: 2px solid black;
 	background-color: #deebff;
 }
 
+
 /*INFOMATION ICON*/
+
 .buble-info {
 	width: 30px;
 	line-height: 30px;
 	border: 2px solid #d9d9d9;
 	border-radius: 30px;
 }
+
 .info {
 	color: #0065fc;
 	font-size: 20px;
 	padding: 0px 11px;
 }
+
 .info-text {
 	font-size: 18px;
 	margin-left: 50px;
 	margin-top: -25px;
 }
+
 
 /*..........HIGH SECTION..........*/
 
@@ -229,16 +268,20 @@ button {
 	margin-top: 40px;
 	gap: 55px;
 }
+
 .blue-star {
 	color: #0065fc;
 	font-size: 13px;
 	margin-right: -3px;
 }
+
 .white-star {
 	color: #f2f2f2;
 	font-size: 13px;
 	margin-right: -3px;
 }
+
+
 /*..........ACCOMODATION..........*/
 
 .container-accomodation {
@@ -248,6 +291,7 @@ button {
 	background-color: #f2f2f2;
 	border-radius: 15px;
 }
+
 .accomodation-location {
 	width: 810px;
 	height: 450px;
@@ -259,13 +303,16 @@ button {
 	margin-left: -280px;
 	gap: 30px;
 }
+
 #nav-hebe {
 	margin-left: 40px;
 	margin-top: 30px;
 }
+
 .accomodation-link {
 	text-decoration: none;
 }
+
 .marseille {
 	width: 246px;
 	height: 204px;
@@ -287,6 +334,7 @@ button {
 	margin-top: -11px;
 	color: black;
 }
+
 .star {
 	margin-top: -15px;
 }
@@ -300,7 +348,10 @@ button {
 	margin-top: 560px;
 	margin-left: 50px;
 }
+
+
 /*----- MOST POPULAR-----*/
+
 .container-most-popular {
 	width: 420px;
 	height: 625px;
@@ -310,16 +361,20 @@ button {
 	background-color: #f2f2f2;
 	justify-content: space-around;
 }
+
 .h2-popular {
 	margin-top: -0px;
 }
+
 .title-popular {
 	display: flex;
 	justify-content: space-around;
 }
+
 .icon-popular {
 	font-size: 25px;
 }
+
 .popular-link {
 	text-decoration: none;
 }
@@ -333,6 +388,7 @@ button {
 	margin-left: 40px;
 	margin-top: -30px;
 }
+
 .popular-rental-title {
 	padding-left: 140px;
 	margin-top: -130px;
@@ -351,6 +407,8 @@ button {
 	margin-left: 145px;
 	color: black;
 }
+
+
 /*..........ACTIVITIES..........*/
 
 .container-activities {
@@ -361,6 +419,7 @@ button {
 	margin-top: 50px;
 	margin-bottom: 20px;
 }
+
 .activities {
 	display: flex;
 	flex-flow: column wrap;
@@ -368,18 +427,22 @@ button {
 	margin-top: 70px;
 	margin-left: -208px;
 }
+
 .title-act {
 	margin-top: 15px;
 }
+
 .activities-link {
 	text-decoration: none;
 }
+
 .act-port {
 	width: 297px;
 	height: 450px;
 	border-radius: 8px;
 	box-shadow: 0 0 6px 3px #d8d7d7;
 }
+
 .image-port {
 	width: 297px;
 	height: 390px;
@@ -393,11 +456,13 @@ button {
 	box-shadow: 0 0 6px 3px #d8d7d7;
 	margin-left: 45px;
 }
+
 .image-fort {
 	width: 340px;
 	height: 185px;
 	border-radius: 8px 8px 0 0;
 }
+
 .act-frioul {
 	width: 340px;
 	height: 164px;
@@ -406,11 +471,13 @@ button {
 	margin-left: 45px;
 	margin-top: 45px;
 }
+
 .image-frioul {
 	width: 340px;
 	height: 110px;
 	border-radius: 8px 8px 0 0;
 }
+
 .act-national {
 	width: 310px;
 	height: 450px;
@@ -418,11 +485,13 @@ button {
 	box-shadow: 0 0 6px 3px #d8d7d7;
 	margin-left: 45px;
 }
+
 .image-national {
 	width: 310px;
 	height: 390px;
 	border-radius: 8px 8px 0 0;
 }
+
 .act-notredame {
 	width: 346px;
 	height: 212px;
@@ -430,6 +499,7 @@ button {
 	box-shadow: 0 0 6px 3px #d8d7d7;
 	margin-left: 45px;
 }
+
 .image-notredame {
 	width: 346px;
 	height: 150px;
@@ -444,27 +514,33 @@ button {
 	margin-left: 45px;
 	margin-bottom: 85px;
 }
+
 .image-longchamp {
 	width: 346px;
 	height: 150px;
 	border-radius: 8px 8px 0 0;
 }
 
+
 /*..........FOOTER..........*/
+
 .footer-line {
 	background-color: #f2f2f2;
 	width: 100%;
 	height: 215px;
 }
+
 .footer-blocks {
 	max-width: 1450px;
 	margin: auto;
 	padding: 0 3rem;
 	display: flex;
 }
+
 .title-footer {
 	font-size: 19px;
 }
+
 .about,
 .hebe,
 .contact {
@@ -476,16 +552,18 @@ footer a {
 	color: black;
 	text-decoration: none;
 }
+
 footer a:hover {
 	color: #0065fc;
 }
 
+
 /*RESPONSIVE TABLET*/
+
 @media only screen and (max-width: 1024px) {
 	#nav-hebe {
 		margin-left: 20px;
 	}
-
 	/*HEADER*/
 	nav ul {
 		margin-left: 11rem;
@@ -554,16 +632,13 @@ footer a:hover {
 	.text-popular {
 		margin-left: 290px;
 	}
-
 	/*ACTIVITIES*/
-
 	.container-activities {
 		height: 1500px;
 		display: flex;
 		justify-content: flex-start;
 		margin-top: 40px;
 	}
-
 	.activities {
 		display: flex;
 		flex-flow: column wrap;
@@ -600,6 +675,8 @@ footer a:hover {
 		padding: 30px 30px;
 	}
 }
+
+
 /*RESPONSIVE MOBILE*/
 
 @media screen and (max-width: 375px) {
@@ -611,7 +688,6 @@ footer a:hover {
 		width: 350px;
 	}
 	/*NAVIGATION-HEADER*/
-
 	.nav-menu {
 		width: 100%;
 	}
@@ -673,7 +749,6 @@ footer a:hover {
 	.section-up {
 		width: 100%;
 	}
-	/*MIDDLE-SECTION*/
 	/*MOST-POPULAR*/
 	.container-most-popular {
 		background-color: #f2f2f2;
