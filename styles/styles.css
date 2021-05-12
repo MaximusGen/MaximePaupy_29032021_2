@@ -623,6 +623,7 @@ footer a:hover {
 	nav ul {
 		order: 2;
 		padding-left: 0px;
+		margin-left: 0px;
 	}
 	nav li {
 		border-bottom: 2px solid #f2f2f2;
