@@ -1,0 +1,63 @@
+.filter {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+.filter-buble {
+	display: flex;
+}
+.filter-categories {
+	display: flex;
+	align-items: center;
+	margin-left: 30px;
+	border: 2px solid #d9d9d9;
+	border-radius: 30px;
+	height: 50px;
+	border-left: none;
+}
+.buble-icon {
+	background-color: #deebff;
+	width: 50px;
+	line-height: 50px;
+	border-radius: 50%;
+}
+.icons-eco,.icons-familly,.icons-romantique,.icons-animal {
+	color: #0065fc;
+	font-size: 20px;
+}
+.icons-eco{
+    padding: 0px 12px;
+}
+.icons-familly{
+    padding: 0px 16px;
+}
+.icons-romantique{
+    padding: 0px 15px;
+}
+.icons-animal{
+    padding: 0px 14px;
+}
+.filter-link {
+	text-decoration: none;
+	color: #000;
+	padding-left: 5px;
+	font-weight: bold;
+	font-size: 16px;
+}
+.economique {
+	width: 185px;
+}
+.familly {
+	width: 150px;
+}
+.romantique {
+	width: 175px;
+}
+.animal {
+	width: 225px;
+}
+.filter-categories:hover {
+	border: 2px solid black;
+	background-color: #deebff;
+}
