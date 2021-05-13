@@ -43,7 +43,6 @@ img {
 	margin: 0 auto;
 }
 
-
 /*..........HEADER RESERVIA..........*/
 
 .header-content {
@@ -52,7 +51,6 @@ img {
 	justify-content: space-between;
 	align-content: flex-start;
 }
-
 
 /*NAVIGATION MENU*/
 
@@ -106,7 +104,6 @@ nav li:hover {
 	margin-top: -15px;
 }
 
-
 /*HEADER-FILTER-SEARCH*/
 
 .subtitle {
@@ -116,7 +113,6 @@ nav li:hover {
 .content-header {
 	margin-left: 10px;
 }
-
 
 /*SEARCH-BUTTON*/
 
@@ -174,7 +170,6 @@ button {
 	color: #0065fc;
 }
 
-
 /*FILTER*/
 
 .filter {
@@ -191,52 +186,54 @@ button {
 .filter-categories {
 	display: flex;
 	align-items: center;
-	margin-left: 30px;
+	margin-left: 20px;
+	margin-bottom: 20px;
 	border: 2px solid #d9d9d9;
 	border-radius: 30px;
 	height: 50px;
 	border-left: none;
 }
-.filter-icons::before{
-	display: inline-block;
+
+.buble-icon {
 	background-color: #deebff;
-	height: 50px;
 	width: 50px;
+	line-height: 50px;
 	border-radius: 50%;
-	text-align: center;
-	line-height: 45px;
+}
+
+.icon {
 	color: #0065fc;
 	font-size: 20px;
+}
+
+.icons-eco {
+	padding: 0px 12px;
+}
+
+.icons-familly {
+	padding: 0px 16px;
+}
+
+.icons-romantique {
+	padding: 0px 15px;
+}
+
+.icons-animal {
+	padding: 0px 14px;
 }
 
 .filter-link {
 	text-decoration: none;
 	color: #000;
-	padding-left: 5px;
+	margin-left: 15px;
+	margin-right: 15px;
 	font-weight: bold;
 	font-size: 16px;
-}
-
-.economique {
-	width: 185px;
-}
-
-.familly {
-	width: 150px;
-}
-
-.romantique {
-	width: 175px;
-}
-
-.animal {
-	width: 225px;
 }
 
 .filter-categories:hover {
 	background-color: #deebff;
 }
-
 
 /*INFOMATION ICON*/
 
@@ -259,7 +256,6 @@ button {
 	margin-top: -25px;
 }
 
-
 /*..........HIGH SECTION..........*/
 
 .section-up {
@@ -280,7 +276,6 @@ button {
 	font-size: 13px;
 	margin-right: -3px;
 }
-
 
 /*..........ACCOMODATION..........*/
 
@@ -349,7 +344,6 @@ button {
 	margin-left: 50px;
 }
 
-
 /*----- MOST POPULAR-----*/
 
 .container-most-popular {
@@ -407,7 +401,6 @@ button {
 	margin-left: 145px;
 	color: black;
 }
-
 
 /*..........ACTIVITIES..........*/
 
@@ -521,7 +514,6 @@ button {
 	border-radius: 8px 8px 0 0;
 }
 
-
 /*..........FOOTER..........*/
 
 .footer-line {
@@ -556,7 +548,6 @@ footer a {
 footer a:hover {
 	color: #0065fc;
 }
-
 
 /*RESPONSIVE TABLET*/
 
@@ -675,7 +666,6 @@ footer a:hover {
 		padding: 30px 30px;
 	}
 }
-
 
 /*RESPONSIVE MOBILE*/
 
